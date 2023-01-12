@@ -1,706 +1,753 @@
 
-<!DOCTYPE html>
-<html xml:lang="ru" lang="ru" class="">
-<head>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
-	<meta name="HandheldFriendly" content="true" >
-	<meta name="MobileOptimized" content="width">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<title>Портфолио фотографа</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta name="description" content="Занимаешься фотографией? Покажи свою профессиональность и приумножай клиентов, дополнив своими работами стильный дизайн сайта." />
-<style type="text/css">
-							:root {
-								--theme-color-b24button: var(--primary);
-							}
-						</style>
-<style type="text/css">
-				:root {
-					--primary: #6ab8ee !important;
-					--primary-darken-1: hsl(204.55, 80%, 65%);
-					--primary-darken-2: hsl(204.55, 80%, 62%);
-					--primary-darken-3: hsl(204.55, 80%, 57%);
-					--primary-lighten-1: hsl(204.55, 80%, 77%);
-					--primary-opacity-0: rgba(106, 184, 238, 0);
-					--primary-opacity-0_05: rgba(106, 184, 238, 0.05);
-					--primary-opacity-0_1: rgba(106, 184, 238, 0.1);
-					--primary-opacity-0_15: rgba(106, 184, 238, 0.15);
-					--primary-opacity-0_2: rgba(106, 184, 238, 0.2);
-					--primary-opacity-0_25: rgba(106, 184, 238, 0.25);
-					--primary-opacity-0_3: rgba(106, 184, 238, 0.3);
-					--primary-opacity-0_35: rgba(106, 184, 238, 0.35);
-					--primary-opacity-0_4: rgba(106, 184, 238, 0.4);
-					--primary-opacity-0_45: rgba(106, 184, 238, 0.45);
-					--primary-opacity-0_5: rgba(106, 184, 238, 0.5);
-					--primary-opacity-0_55: rgba(106, 184, 238, 0.55);
-					--primary-opacity-0_6: rgba(106, 184, 238, 0.6);
-					--primary-opacity-0_65: rgba(106, 184, 238, 0.65);
-					--primary-opacity-0_7: rgba(106, 184, 238, 0.7);
-					--primary-opacity-0_75: rgba(106, 184, 238, 0.75);
-					--primary-opacity-0_8: rgba(106, 184, 238, 0.8);
-					--primary-opacity-0_85: rgba(106, 184, 238, 0.85);
-					--primary-opacity-0_9: rgba(106, 184, 238, 0.9);
-					--primary-opacity-0_95: rgba(106, 184, 238, 0.95);
-					--theme-color-main: #12222d;
-					--theme-color-secondary: #fafbfc;
-					--theme-color-title: #12222d;
-					--theme-color-strict-inverse: #000000;
-				}
-			</style>
-<script type="text/javascript" data-skip-moving="true">(function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Windows/i.test(ua)){cl += ' bx-win';}else if (/Macintosh/i.test(ua)){cl += " bx-mac";}else if (/Linux/i.test(ua) && !/Android/i.test(ua)){cl += " bx-linux";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Firefox/.test(ua)){cl += " bx-firefox";}ht.className = htc ? htc + " " + cl : cl;})(window, document, navigator);</script>
-
-
-<link href="/bitrix/js/intranet/intranet-common.min.css?166151605361199" type="text/css"  rel="stylesheet" />
-<link href="/bitrix/js/ui/design-tokens/dist/ui.design-tokens.min.css?166921294222029" type="text/css"  rel="stylesheet" />
-<link href="/bitrix/js/intranet/design-tokens/bitrix24/bitrix24-design-tokens.min.css?16655703861466" type="text/css"  rel="stylesheet" />
-<link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16620208132320" type="text/css"  rel="stylesheet" />
-<link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?167109653425089" type="text/css"  rel="stylesheet" />
-<link href="/bitrix/js/main/sidepanel/css/sidepanel.min.css?16655607828173" type="text/css"  rel="stylesheet" />
-<link href="/bitrix/js/main/core/css/core_date.min.css?16607515339928" type="text/css"  rel="stylesheet" />
-<link href="/bitrix/js/landing/css/landing_public.min.css?1567508327250" type="text/css"  rel="stylesheet" />
-<link href="/bitrix/components/bitrix/landing.pub/templates/.default/style.min.css?166141182237361" type="text/css"  rel="stylesheet" />
-<link href="/bitrix/panel/main/popup.min.css?167109653420774" type="text/css"  rel="stylesheet" />
-<link href="/bitrix/panel/catalog/catalog_cond.min.css?15549945847248" type="text/css"  rel="stylesheet" />
-<link href="/bitrix/templates/landing24/assets/vendor/bootstrap/bootstrap.min.css?1645433198156519" type="text/css"  data-template-style="true"  rel="stylesheet" />
-<link href="/bitrix/templates/landing24/theme.min.css?1671192152581431" type="text/css"  data-template-style="true"  rel="stylesheet" />
-<link href="/bitrix/templates/landing24/assets/css/custom-grid.min.css?156933840138" type="text/css"  data-template-style="true"  rel="stylesheet" />
-<link href="/bitrix/templates/landing24/template_styles.min.css?16209889212316" type="text/css"  data-template-style="true"  rel="stylesheet" />
-
-
-
-
-
-
-
-<meta name="robots" content="noindex" />
-<link rel="preload" href="/bitrix/templates/landing24/assets/vendor/icon/icon/font.woff" as="font" crossorigin="anonymous" type="font/woff" crossorigin>
-<link rel="preload" href="/bitrix/templates/landing24/assets/vendor/icon/icon/font.woff2" as="font" crossorigin="anonymous" type="font/woff2" crossorigin>
-<style>.icon-clock:before{content:"\e081";}.icon-like:before{content:"\e068";}.icon-wallet:before{content:"\e02a";}</style>
-<link rel="preload" href="/bitrix/templates/landing24/assets/vendor/icon/far/font.woff" as="font" crossorigin="anonymous" type="font/woff" crossorigin>
-<link rel="preload" href="/bitrix/templates/landing24/assets/vendor/icon/far/font.woff2" as="font" crossorigin="anonymous" type="font/woff2" crossorigin>
-<style>.fa-angle-left:before{content:"\f104";}.fa-angle-right:before{content:"\f105";}.icon-calendar:before{content:"\e075";}</style>
-<link rel="preload" href="/bitrix/templates/landing24/assets/vendor/icon/fab/font.woff" as="font" crossorigin="anonymous" type="font/woff" crossorigin>
-<link rel="preload" href="/bitrix/templates/landing24/assets/vendor/icon/fab/font.woff2" as="font" crossorigin="anonymous" type="font/woff2" crossorigin>
-<style>.fa-facebook:before{content:"\f09a";}.fa-instagram:before{content:"\f16d";}.fa-telegram:before{content:"\f2c6";}.fa-pinterest:before{content:"\f0d2";}</style>
-<style>
-					body {
-						--landing-font-family: Open Sans
-					}
-				</style>
-<link rel="stylesheet" href="https://fonts.bitrix24.ru/css2?family=Open+Sans:wght@100;200;300;400;500;600;700;800;900">
-<style>
-				body {
-					font-weight: 400;
-					font-family: Open Sans;
-					-webkit-font-smoothing: antialiased;
-					-moz-osx-font-smoothing: grayscale;
-					-moz-font-feature-settings: "liga", "kern";
-					text-rendering: optimizelegibility;
-				}
-			</style>
-<style>
-				h1, h2, h3, h4, h5, h6 {
-					font-family: Open Sans;
-				}
-			</style>
-<style>
-			html {font-size: 14px;}
-			body {font-size: 1rem;}
-			.g-font-size-default {font-size: 1rem;}
-		</style>
-<style>
-				main.landing-public-mode {
-					line-height: 1.6;
-					font-weight: 400;
-				}
-				
-				.landing-public-mode .h1, .landing-public-mode .h2, .landing-public-mode .h3, .landing-public-mode .h4, 
-				.landing-public-mode .h5, .landing-public-mode .h6, .landing-public-mode .h7,
-				.landing-public-mode h1, .landing-public-mode h2, .landing-public-mode h3, .landing-public-mode h4, 
-				.landing-public-mode h5, .landing-public-mode h6 {
-					font-weight: 400;
-				}
-			</style>
-<meta property="og:title" content="Портфолио фотографа" /><meta property="og:description" content="Занимаешься фотографией? Покажи свою профессиональность и приумножай клиентов, дополнив своими работами стильный дизайн сайта." /><meta property="og:type" content="website" /><meta property="twitter:title" content="Портфолио фотографа" /><meta property="twitter:description" content="Занимаешься фотографией? Покажи свою профессиональность и приумножай клиентов, дополнив своими работами стильный дизайн сайта." /><meta property="twitter:type" content="website" /> <meta property="og:image" content="https://b24-r08mtv.bitrix24.site/preview.jpg" /><meta property="twitter:image" content="https://b24-r08mtv.bitrix24.site/preview.jpg" /> <meta property="Bitrix24SiteType" content="page" /> <meta property="og:url" content="https://b24-r08mtv.bitrix24.site/" />
-<link rel="canonical" href="https://b24-r08mtv.bitrix24.site/"/><noscript><link rel="stylesheet" href="https://fonts.bitrix24.ru/css?family=Nunito" data-font="g-font-nunito"></noscript>
-<link rel="preload" href="https://fonts.bitrix24.ru/css?family=Nunito" data-font="g-font-nunito" onload="this.removeAttribute('onload');this.rel='stylesheet'" as="style">
-<style data-id="g-font-nunito">.g-font-nunito { font-family: "Nunito", sans-serif; }</style><noscript><link rel="stylesheet" href="https://fonts.bitrix24.ru/css?family=Yeseva+One" data-font="g-font-yeseva-one"></noscript>
-<link rel="preload" href="https://fonts.bitrix24.ru/css?family=Yeseva+One" data-font="g-font-yeseva-one" onload="this.removeAttribute('onload');this.rel='stylesheet'" as="style">
-<style data-id="g-font-yeseva-one">.g-font-yeseva-one { font-family: "Yeseva One", cursive; }</style></head>
-<body class="landing-b24button-use-style" >
-<main class="w-100 landing-public-mode" ><div id="b15703" class="block-wrapper block-0-menu-26"><header class="landing-block g-pt-20 g-pb-20 u-header u-header--sticky g-brd-top g-brd-4 u-header--float g-brd-primary g-bg-transparent" style="">
-	<div class="container">
-		<nav class="landing-block-node-navbar u-navbar-modal container navbar u-navbar-color-white g-brd-0 g-pa-0 g-mb-0 u-navbar-marker--arrow u-navbar-color-white--hover u-navbar-bg-primary--hover u-navbar-align-left u-navbar-bg-black" data-modal-alert-classes="" style="">
-
-			<!--		 	todo: u-header in other blocks z-index 101-->
-			<!--			todo: click not worked -->
-
-			<div class="landing-block-node-menu-container collapse navbar-collapse align-items-center g-pt-90 g-mt-minus-20 g-font-size-15 g-bg-black" id="navBar5071" style=""><ul class="landing-block-node-menu g-menu-multilevel w-100 navbar-nav flex-column list-unstyled js-scroll-nav"><li class="landing-block-node-menu-item nav-item"><a href="https://b24-r08mtv.bitrix24.site/#b15703" target="_blank" class="landing-block-node-menu-link nav-link row no-gutters align-items-center g-text-decoration-none--hover rounded g-mx-5 g-px-25 g-py-8 g-rounded-25">Главная</a></li><li class="landing-block-node-menu-item nav-item"><a href="https://b24-r08mtv.bitrix24.site/#b15707" target="_self" class="landing-block-node-menu-link nav-link row no-gutters align-items-center g-text-decoration-none--hover rounded g-mx-5 g-px-25 g-py-8 g-rounded-25">Обо мне</a></li><li class="landing-block-node-menu-item nav-item"><a href="https://b24-r08mtv.bitrix24.site/#b15711" target="_self" class="landing-block-node-menu-link nav-link row no-gutters align-items-center g-text-decoration-none--hover rounded g-mx-5 g-px-25 g-py-8 g-rounded-25">Мои услуги</a></li><li class="landing-block-node-menu-item nav-item"><a href="https://b24-r08mtv.bitrix24.site/#b15717" target="_self" class="landing-block-node-menu-link nav-link row no-gutters align-items-center g-text-decoration-none--hover rounded g-mx-5 g-px-25 g-py-8 g-rounded-25">Галерея</a></li><li class="landing-block-node-menu-item nav-item"><a href="https://b24-r08mtv.bitrix24.site/#b15733" target="_self" class="landing-block-node-menu-link nav-link row no-gutters align-items-center g-text-decoration-none--hover rounded g-mx-5 g-px-25 g-py-8 g-rounded-25">Отзывы</a></li><li class="landing-block-node-menu-item nav-item"><a href="https://b24-r08mtv.bitrix24.site/#b15739" target="_self" class="landing-block-node-menu-link nav-link row no-gutters align-items-center g-text-decoration-none--hover rounded g-mx-5 g-px-25 g-py-8 g-rounded-25">Заказать</a></li><li class="landing-block-node-menu-item nav-item"><a href="https://b24-r08mtv.bitrix24.site/#b15743" target="_blank" class="landing-block-node-menu-link nav-link row no-gutters align-items-center g-text-decoration-none--hover rounded g-mx-5 g-px-25 g-py-8 g-rounded-25">Контакты</a></li></ul></div>
-
-			<button class="navbar-toggler btn g-line-height-1 g-brd-none g-pa-0 g-py-10 collapsed" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar5071" data-toggle="collapse" data-target="#navBar5071">
-				<span class="d-flex align-items-center">
-					<span class="landing-block-node-hamburger hamburger hamburger--sm hamburger--slider g-mr-9">
-						<span class="hamburger-box">
-							<span class="hamburger-inner"></span>
-						</span>
-					</span>
-					<span class="landing-block-node-hamburger-text g-pointer-events-all g-pos-rel text-uppercase g-font-nunito g-line-height-1_2 g-font-size-17 g-color-white" style="">Меню</span>
-				</span>
-			</button>
-
-		</nav>
-	</div>
-</header></div><div id="b15705" class="block-wrapper block-46-8-cover-bgimg-title-with-icons"><section class="landing-block g-pos-rel" data-slider-autoplay="1" data-slider-autoplay-speed="5000" style="">
-	<div class="landing-block-node-bgimg js-carousel" data-autoplay="true" data-infinite="true" data-fade="true" data-speed="5000"><div class="js-slide u-bg-overlay g-bg-black-opacity-0_2--after landing-block-node-card landing-block-node-card-bgimg g-bg-img-hero g-min-height-100vh landing-card slick-slide slick-current slick-active" style="background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOTIwIiBoZWlnaHQ9IjE0NDAiPjxyZWN0IGlkPSJiYWNrZ3JvdW5kcmVjdCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgeD0iMCIgeT0iMCIgZmlsbD0iI2RkZCIgZmlsbC1vcGFjaXR5PSIuNyIgc3Ryb2tlPSJub25lIi8+PC9zdmc+);" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}" data-lazy-bg="Y" data-bg="url('https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/1.jpg')|-webkit-image-set(url('https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/1.jpg') 1x, url('https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/1.jpg') 2x)|image-set(url('https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/1.jpg') 1x, url('https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/1.jpg') 2x)" data-src="https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/1.jpg">
-		</div></div>
-
-	<div class="u-bg-overlay__inner g-absolute-centered w-100 g-width-80x--md">
-		<div class="landing-block-node-text-container js-animation container text-center zoomIn" style="">
-			<h2 class="landing-block-node-subtitle landing-semantic-subtitle-image-medium text-uppercase u-heading-v3__title g-color-white g-brd-3 g-brd-primary g-pb-5 g-font-weight-auto g-font-nunito g-letter-spacing-inherit g-mb-auto g-line-height-1_2 g-font-size-17" style="">Фотограф</h2>
-			<h3 class="landing-block-node-title landing-semantic-title-image-medium text-uppercase g-line-height-1_4 g-letter-spacing-5 g-color-white g-mb-20 g-font-size-50 g-font-yeseva-one g-font-weight-auto" style="">Джон МакМиллан</h3>
-
-			<ul class="list-inline g-mb-30"><li class="landing-block-node-card-list-item list-inline-item g-mx-20 g-mb-10 g-mb-0--md">
-					<span class="landing-block-node-icon-container g-color-primary g-font-size-24 g-valign-middle g-mr-5" style="">
-						<i class="landing-block-node-icon icon-clock"></i>
-					</span>
-					<div class="landing-block-node-icon-text landing-semantic-text-image-medium g-color-white d-inline-block g-valign-middle text-uppercase g-font-nunito g-font-size-12 g-line-height-1_2" style="">Готовность фото за <span style="font-weight: 700;">2 дня</span></div>
-				</li><li class="landing-block-node-card-list-item list-inline-item g-mx-20 g-mb-10 g-mb-0--md">
-					<span class="landing-block-node-icon-container g-color-primary g-font-size-24 g-valign-middle g-mr-5" style="">
-						<i class="landing-block-node-icon icon-like"></i>
-					</span>
-					<div class="landing-block-node-icon-text landing-semantic-text-image-medium g-color-white d-inline-block g-valign-middle text-uppercase g-font-nunito g-font-size-12 g-line-height-1_2" style="">Гарантия качества</div>
-				</li><li class="landing-block-node-card-list-item list-inline-item g-mx-20 g-mb-10 g-mb-0--md">
-					<span class="landing-block-node-icon-container g-color-primary g-font-size-24 g-valign-middle g-mr-5" style="">
-						<i class="landing-block-node-icon icon-wallet"></i>
-					</span>
-					<div class="landing-block-node-icon-text landing-semantic-text-image-medium g-color-white d-inline-block g-valign-middle text-uppercase g-font-nunito g-font-size-12 g-line-height-1_2" style="">Оплата после съемки</div>
-				</li></ul>
-
-			<div class="landing-block-node-button-container" style="">
-				<a href="https://b24-r08mtv.bitrix24.site/#b15739" class="landing-block-node-button landing-semantic-link-image-medium btn g-btn-size-md text-uppercase g-letter-spacing-1 g-rounded-50 g-py-14 g-btn-type-solid g-btn-primary g-color-white g-font-nunito g-btn-px-m g-color-black--hover" style="" target="_self">Связаться</a>
-			</div>
-		</div>
-	</div>
-</section></div><div id="b15707" class="block-wrapper block-41-2-3-text-blocks-slider-on-color-bg-without-btn-left"><section class="g-pt-70 g-bg-black-opacity-0_7 g-pb-auto" style="">
-	<div class="landing-block-slider container" data-slider-animation="1">
-		<section class="js-carousel" data-pagi-classes="u-carousel-indicators-v1--white-inverse g-absolute-centered--x g-bottom-30"><div class="landing-block-node-card js-slide landing-card slick-slide slick-current slick-active" style="">
-				<!-- Article -->
-				<article class="landing-block-node-card-container align-items-center row flex-items-middle text-center g-mb-50" style="">
-					<div class="col-lg-6 g-mb-0">
-						<div class="text-uppercase text-center g-mx-30">
-							<h6 class="landing-block-node-card-subtitle landing-semantic-subtitle-small `g-font-weight-700` g-mb-15 g-color-white g-font-nunito g-line-height-1_2 g-font-size-12" style="">Обо мне</h6>
-							<h2 class="landing-block-node-card-title landing-semantic-title-medium-bg-before js-animation u-heading-v2-12--1 g-line-height-1_2 g-pb-40 g-font-yeseva-one g-font-weight-auto g-color-primary g-bg-white--before g-font-size-30 animation-none" style="">Профессиональный<p>фотограф</p></h2>
-						</div>
-
-						<div class="landing-block-node-card-text landing-semantic-text-medium js-animation fadeIn g-px-70--md g-mb-25 g-font-size-15 g-line-height-1_6 g-font-nunito g-color-white" style=""><p>Занимаюсь профессиональной фотографией более 6 лет и ориентирован на творчество и качество. На моих плечах уже более 1000 успешно проведенных съемок! На ваших фото всегда будут только живые эмоции. У меня всегда индивидуальный подход к каждому клиенту. Так же выполняю постобработку и цветокоррекцию фото, при необходимости детальную ретушь на высшем уровне! Сделаю так, чтобы съемка стала интересным и ярким событием!</p></div>
-
-						<div class="landing-block-node-card-price landing-semantic-subtitle-medium g-font-weight-700 g-color-white g-font-size-26" style=""> </div>
-					</div>
-					<div class="col-lg-6">
-						<!-- Article Image -->
-						<img class="landing-block-node-card-photo img-fluid g-width-360 g-width-auto--lg mx-auto" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NDAiIGhlaWdodD0iODEwIj48cmVjdCBpZD0iYmFja2dyb3VuZHJlY3QiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHg9IjAiIHk9IjAiIGZpbGw9IiNkZGQiIGZpbGwtb3BhY2l0eT0iLjciIHN0cm9rZT0ibm9uZSIvPjwvc3ZnPg==" alt="" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}" data-lazy-img="Y" data-src="https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/1_2.png" loading="lazy" data-srcset="https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/1_2.png 2x" />
-						<!-- End Article Image -->
-					</div>
-				</article>
-				<!-- End Article -->
-			</div></section>
-	</div>
-</section></div><div id="b15709" class="block-wrapper block-26-6-separator-waves"><div class="landing-block g-pt-0 g-pb-0 g-height-70 g-height-15vh--md g-fill-black-opacity-0_7--first g-fill-black-opacity-0_9--second g-my-minus-2" style="">
-	<svg class="g-width-100x g-height-100x" viewbox="0 0 3184 446" preserveaspectratio="none" xmlns="http://www.w3.org/2000/svg">
-		<path class="fill-first" d="M3184 257.647L3158.22 253.329C3028.5 232.456 2886.86 222.357 2733.29 223.032C2642.26 223.431 2551.78 228.592 2461.84 236.149C2426.54 236.549 2391.09 238.004 2355.34 240.275C2221 231.285 2068.99 226.286 1913.49 231.156C1723.42 237.109 1558.37 264.563 1391.63 286.417C1137.84 264.35 920.847 223.032 661.328 223.032C563.229 223.032 473.232 231.394 391.326 248.135L343.441 243.122C217.846 230.497 109.05 223.812 17.0527 223.07L0 223V0H3184V257.647Z" />
-		<path class="fill-second" d="M2733.29 223.032C2897.09 222.312 3047.33 233.851 3184 257.647V339.233C3184 338.771 2910.31 259.731 2582.38 239.042C2542.25 236.511 2502.17 235.647 2461.89 236.127C2551.82 228.59 2642.28 223.431 2733.29 223.032ZM1845.32 295.894C1568.49 310.033 1352.52 284.477 1144.23 259.829C986.552 241.17 833.274 223.032 661.328 223.032C559.757 223.032 466.872 231.996 382.674 249.926C452.603 251.103 528.079 254.504 609.102 260.128C675.002 264.702 743.206 270.305 813.746 276.1C1114.33 300.792 1457.33 328.97 1845.32 295.894Z" opacity="0.35" />
-		<path class="fill-second" d="M2355 240.297C2220.73 231.276 2068.85 226.29 1913.49 231.156C1759.53 235.978 1621.99 254.907 1486.68 273.529C1400.94 285.329 1316.09 297.005 1228.53 304.892C1472.56 316.132 1739.31 314.555 2029.73 275.756C2143.31 260.583 2250.44 246.954 2355 240.297ZM413.43 250.578C249.63 232.193 111.82 223 0 223V274.754C106.985 254.341 244.795 246.283 413.43 250.578Z" opacity="0.35" />
-		<path class="fill-second" d="M0 274.754C145.792 246.937 348.826 242.062 609.102 260.128C999.516 287.227 1470.77 350.429 2029.73 275.756C2226.59 249.458 2404.1 227.795 2582.38 239.042C2910.31 259.731 3184 338.771 3184 339.233V446H0V274.754Z" />
-	</svg>
-</div></div><div id="b15711" class="block-wrapper block-04-7-one-col-fix-with-title-and-text-2"><section class="landing-block landing-semantic-background-color js-animation g-pb-20 animation-none animated g-bg-black-opacity-0_9 g-pt-60" style="">
-	<div class="landing-block-node-container container text-center g-max-width-800" style="">
-		<div class="landing-block-node-inner text-uppercase u-heading-v2-4--bottom g-brd-white" style="">
-			<h6 class="landing-block-node-subtitle landing-semantic-subtitle-medium-primary g-font-size-12 g-mb-15 g-font-weight-auto g-line-height-1_2 g-color-white g-font-nunito" style="">Мои услуги</h6>
-			<h2 class="landing-block-node-title landing-semantic-title-medium u-heading-v2__title g-font-yeseva-one g-font-weight-auto g-mb-minus-15 g-color-primary g-line-height-1_2 g-font-size-30 text-center" style="">Что я могу сделать для вас</h2>
-		</div>
-		<div class="landing-block-node-text landing-semantic-text-medium g-pb-1 g-color-white g-font-size-15 g-font-nunito g-line-height-1_6" style=""><p>У меня широкий спектр услуг, но есть основные, которые представлены ниже. Помимо этого есть портретная фотосъемка, предметная фотосъемка, интерьерная и все что только вашей душе угодно.</p></div>
-	</div>
-</section></div><div id="b15713" class="block-wrapper block-40-1-three-cols-carousel"><section class="landing-block g-pt-auto g-pb-25 g-bg-black-opacity-0_9" style="">
-	<div class="landing-block-slider container-fluid g-px-30" data-slider-autoplay="1" data-slider-slides-show="3" data-slider-arrows="3" data-slider-dots="0" data-slider-animation="1">
-		<div class="js-carousel g-pos-rel g-mx-minus-15 row" data-infinite="true" data-autoplay="true" data-slides-show="3" data-pagi-classes="u-carousel-indicators-v1 g-absolute-centered--x g-pt-20" data-arrows-classes="u-arrow-v1 g-absolute-centered--y g-width-45 g-height-45 g-font-size-40 g-transition-0_2 g-transition--ease-in g-color-white g-bg-primary g-opacity-0_8--hover" data-arrow-left-classes="fa fa-angle-left g-left-minus-15" data-arrow-right-classes="fa fa-angle-right g-right-minus-15" data-responsive="[{
-                 &quot;breakpoint&quot;: 1200,
-                 &quot;settings&quot;: {
-                   &quot;slidesToShow&quot;: 3
-                 }
-               }, {
-                 &quot;breakpoint&quot;: 992,
-                 &quot;settings&quot;: {
-                   &quot;slidesToShow&quot;: 2
-                 }
-               }, {
-                 &quot;breakpoint&quot;: 576,
-                 &quot;settings&quot;: {
-                   &quot;slidesToShow&quot;: 1
-                 }
-               }]" data-init-classes-exclude="[{
-                 &quot;selector&quot;: &quot;.landing-block-node-card&quot;,
-                 &quot;class&quot;: &quot;col-12 col-sm-6 col-lg-4&quot;
-               }, {
-                 &quot;selector&quot;: &quot;.js-carousel&quot;,
-                 &quot;class&quot;: &quot;row&quot;
-               }]"><div class="landing-block-node-card js-slide g-px-15 landing-card slick-slide" style="">
-				<!-- Article -->
-				<article class="g-pos-rel">
-					<figure class="landing-block-node-card-img-container u-bg-overlay g-pointer-events-before-after-none g-bg-none--after" style="">
-						<img class="landing-block-node-card-img img-fluid w-100" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MTAiIGhlaWdodD0iMTAwMCI+PHJlY3QgaWQ9ImJhY2tncm91bmRyZWN0IiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB4PSIwIiB5PSIwIiBmaWxsPSIjZGRkIiBmaWxsLW9wYWNpdHk9Ii43IiBzdHJva2U9Im5vbmUiLz48L3N2Zz4=" alt="" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}" data-lazy-img="Y" data-src="https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/3_1.jpg" loading="lazy" data-srcset="https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/3_1.jpg 2x" />
-					</figure>
-
-					<header class="g-pos-abs g-bottom-0 g-left-0 w-100 g-pa-30">
-						<div>
-							<span class="landing-block-node-card-icon-container g-color-primary g-font-size-22 g-mr-10" style="">
-								<i class="landing-block-node-card-icon icon-calendar"></i>
-							</span>
-							<div class="landing-block-node-card-subtitle landing-semantic-subtitle-image-small d-inline-block text-uppercase g-font-size-12 g-color-white g-font-weight-auto g-mb-auto text-center g-font-nunito g-line-height-1_2" style=""><p>Запись открыта!</p></div>
-						</div>
-						<h2 class="landing-block-node-card-title landing-semantic-title-image-small text-uppercase g-mb-10 g-font-yeseva-one g-font-weight-auto text-left g-line-height-1_2 g-font-size-24 g-color-white" style="">Свадебная фотосессия</h2>
-						<div class="landing-block-node-card-text landing-semantic-text-image-medium g-font-size-15 text-left g-font-nunito g-line-height-1_6 g-color-white g-mb-40" style=""><p>Отсниму ваше событие полностью от росписи и прогулки до банкета!</p></div>
-						<div class="landing-block-node-card-button-container text-center" style="">
-							<a class="landing-block-node-card-button landing-semantic-link-image-medium btn g-btn-type-solid text-uppercase g-btn-primary g-bg-transparent--hover g-py-15 g-btn-size-md g-btn-px-m g-rounded-50 g-color-white g-color-white--hover g-font-nunito" href="https://b24-r08mtv.bitrix24.site/#b15739" style="" target="_self">Заказать</a>
-						</div>
-					</header>
-				</article>
-				<!-- End Article -->
-			</div><div class="landing-block-node-card js-slide g-px-15 landing-card slick-slide" style="">
-				<!-- Article -->
-				<article class="g-pos-rel">
-					<figure class="landing-block-node-card-img-container u-bg-overlay g-pointer-events-before-after-none g-bg-none--after" style="">
-						<img class="landing-block-node-card-img img-fluid w-100" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MTAiIGhlaWdodD0iMTAwMCI+PHJlY3QgaWQ9ImJhY2tncm91bmRyZWN0IiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB4PSIwIiB5PSIwIiBmaWxsPSIjZGRkIiBmaWxsLW9wYWNpdHk9Ii43IiBzdHJva2U9Im5vbmUiLz48L3N2Zz4=" alt="" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}" data-lazy-img="Y" data-src="https://fastcloudstorage.info/site_external_files/da9/da90261a71daf1d6cea45f206c739696/1220px211_1x.jpg" loading="lazy" data-srcset="https://fastcloudstorage.info/site_external_files/acf/acf23b9a7609685051f93444db47b8f8/1220px211_2x.jpg 2x" />
-					</figure>
-
-					<header class="g-pos-abs g-bottom-0 g-left-0 w-100 g-pa-30">
-						<div>
-							<span class="landing-block-node-card-icon-container g-color-primary g-font-size-22 g-mr-10" style="">
-								<i class="landing-block-node-card-icon icon-calendar"></i>
-							</span>
-							<div class="landing-block-node-card-subtitle landing-semantic-subtitle-image-small d-inline-block text-uppercase g-font-size-12 g-color-white g-font-weight-auto g-mb-auto text-center g-font-nunito g-line-height-1_2" style=""><p>Запись открыта!</p></div>
-						</div>
-						<h2 class="landing-block-node-card-title landing-semantic-title-image-small text-uppercase g-mb-10 g-font-yeseva-one g-font-weight-auto text-left g-line-height-1_2 g-font-size-24 g-color-white" style="">Семейная фотосессия</h2>
-						<div class="landing-block-node-card-text landing-semantic-text-image-medium g-font-size-15 text-left g-font-nunito g-line-height-1_6 g-color-white g-mb-40" style=""><p>Вы получите качественные и атмосферные семейные фото!</p></div>
-						<div class="landing-block-node-card-button-container text-center" style="">
-							<a class="landing-block-node-card-button landing-semantic-link-image-medium btn g-btn-type-solid text-uppercase g-btn-primary g-bg-transparent--hover g-py-15 g-btn-size-md g-btn-px-m g-rounded-50 g-color-white g-color-white--hover g-font-nunito" href="https://b24-r08mtv.bitrix24.site/#b15739" style="" target="_self">Заказать</a>
-						</div>
-					</header>
-				</article>
-				<!-- End Article -->
-			</div><div class="landing-block-node-card js-slide g-px-15 landing-card slick-slide" style="">
-				<!-- Article -->
-				<article class="g-pos-rel">
-					<figure class="landing-block-node-card-img-container u-bg-overlay g-pointer-events-before-after-none g-bg-none--after" style="">
-						<img class="landing-block-node-card-img img-fluid w-100" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MTAiIGhlaWdodD0iMTAwMCI+PHJlY3QgaWQ9ImJhY2tncm91bmRyZWN0IiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB4PSIwIiB5PSIwIiBmaWxsPSIjZGRkIiBmaWxsLW9wYWNpdHk9Ii43IiBzdHJva2U9Im5vbmUiLz48L3N2Zz4=" alt="" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}" data-lazy-img="Y" data-src="https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/3_3.jpg" loading="lazy" data-srcset="https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/3_3.jpg 2x" />
-					</figure>
-
-					<header class="g-pos-abs g-bottom-0 g-left-0 w-100 g-pa-30">
-						<div>
-							<span class="landing-block-node-card-icon-container g-color-primary g-font-size-22 g-mr-10" style="">
-								<i class="landing-block-node-card-icon icon-calendar"></i>
-							</span>
-							<div class="landing-block-node-card-subtitle landing-semantic-subtitle-image-small d-inline-block text-uppercase g-font-size-12 g-color-white g-font-weight-auto g-mb-auto text-center g-font-nunito g-line-height-1_2" style=""><p></p>Запись открыта!<br /><p></p></div>
-						</div>
-						<h2 class="landing-block-node-card-title landing-semantic-title-image-small text-uppercase g-mb-10 g-font-yeseva-one g-font-weight-auto text-left g-line-height-1_2 g-font-size-24 g-color-white" style="">fashion-фотография</h2>
-						<div class="landing-block-node-card-text landing-semantic-text-image-medium g-font-size-15 text-left g-font-nunito g-line-height-1_6 g-color-white g-mb-40" style=""><p>Произвожу фотосъёмку коллекций одежды, аксессуаров и дефиле.</p></div>
-						<div class="landing-block-node-card-button-container text-center" style="">
-							<a class="landing-block-node-card-button landing-semantic-link-image-medium btn g-btn-type-solid text-uppercase g-btn-primary g-bg-transparent--hover g-py-15 g-btn-size-md g-btn-px-m g-rounded-50 g-color-white g-color-white--hover g-font-nunito" href="https://b24-r08mtv.bitrix24.site/#b15739" style="" target="_self">Заказать</a>
-						</div>
-					</header>
-				</article>
-				<!-- End Article -->
-			</div><div class="landing-block-node-card js-slide g-px-15 landing-card slick-slide" style="">
-				<!-- Article -->
-				<article class="g-pos-rel">
-					<figure class="landing-block-node-card-img-container u-bg-overlay g-pointer-events-before-after-none g-bg-none--after" style="">
-						<img class="landing-block-node-card-img img-fluid w-100" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MTAiIGhlaWdodD0iMTAwMCI+PHJlY3QgaWQ9ImJhY2tncm91bmRyZWN0IiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB4PSIwIiB5PSIwIiBmaWxsPSIjZGRkIiBmaWxsLW9wYWNpdHk9Ii43IiBzdHJva2U9Im5vbmUiLz48L3N2Zz4=" alt="" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}" data-lazy-img="Y" data-src="https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/3_4.jpg" loading="lazy" data-srcset="https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/3_4.jpg 2x" />
-					</figure>
-
-					<header class="g-pos-abs g-bottom-0 g-left-0 w-100 g-pa-30">
-						<div>
-							<span class="landing-block-node-card-icon-container g-color-primary g-font-size-22 g-mr-10" style="">
-								<i class="landing-block-node-card-icon icon-calendar"></i>
-							</span>
-							<div class="landing-block-node-card-subtitle landing-semantic-subtitle-image-small d-inline-block text-uppercase g-font-size-12 g-color-white g-font-weight-auto g-mb-auto text-center g-font-nunito g-line-height-1_2" style=""><p>Запись открыта!</p></div>
-						</div>
-						<h2 class="landing-block-node-card-title landing-semantic-title-image-small text-uppercase g-mb-10 g-font-yeseva-one g-font-weight-auto text-left g-line-height-1_2 g-font-size-24 g-color-white" style="">Коммерческое food-фото</h2>
-						<div class="landing-block-node-card-text landing-semantic-text-image-medium g-font-size-15 text-left g-font-nunito g-line-height-1_6 g-color-white g-mb-40" style=""><p>Создаю &quot;аппетитные&quot; и &quot;ароматные&quot; фото для ресторанов, кафе, пекарен.</p></div>
-						<div class="landing-block-node-card-button-container text-center" style="">
-							<a class="landing-block-node-card-button landing-semantic-link-image-medium btn g-btn-type-solid text-uppercase g-btn-primary g-bg-transparent--hover g-py-15 g-btn-size-md g-btn-px-m g-rounded-50 g-color-white g-color-white--hover g-font-nunito" href="https://b24-r08mtv.bitrix24.site/#b15739" style="" target="_self">Заказать</a>
-						</div>
-					</header>
-				</article>
-				<!-- End Article -->
-			</div><div class="landing-block-node-card js-slide g-px-15 landing-card slick-slide" style="">
-				<!-- Article -->
-				<article class="g-pos-rel">
-					<figure class="landing-block-node-card-img-container u-bg-overlay g-pointer-events-before-after-none g-bg-none--after" style="">
-						<img class="landing-block-node-card-img img-fluid w-100" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MTAiIGhlaWdodD0iMTAwMCI+PHJlY3QgaWQ9ImJhY2tncm91bmRyZWN0IiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB4PSIwIiB5PSIwIiBmaWxsPSIjZGRkIiBmaWxsLW9wYWNpdHk9Ii43IiBzdHJva2U9Im5vbmUiLz48L3N2Zz4=" alt="" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}" data-lazy-img="Y" data-src="https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/3_5.jpg" loading="lazy" data-srcset="https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/3_5.jpg 2x" />
-					</figure>
-
-					<header class="g-pos-abs g-bottom-0 g-left-0 w-100 g-pa-30">
-						<div>
-							<span class="landing-block-node-card-icon-container g-color-primary g-font-size-22 g-mr-10" style="">
-								<i class="landing-block-node-card-icon icon-calendar"></i>
-							</span>
-							<div class="landing-block-node-card-subtitle landing-semantic-subtitle-image-small d-inline-block text-uppercase g-font-size-12 g-color-white g-font-weight-auto g-mb-auto text-center g-font-nunito g-line-height-1_2" style=""><p>Запись открыта!</p></div>
-						</div>
-						<h2 class="landing-block-node-card-title landing-semantic-title-image-small text-uppercase g-mb-10 g-font-yeseva-one g-font-weight-auto text-left g-line-height-1_2 g-font-size-24 g-color-white" style="">Репортажная фотосъемка</h2>
-						<div class="landing-block-node-card-text landing-semantic-text-image-medium g-font-size-15 text-left g-font-nunito g-line-height-1_6 g-color-white g-mb-40" style=""><p>Сделаю фотографии на вашей выставке, конференции или празднике.</p></div>
-						<div class="landing-block-node-card-button-container text-center" style="">
-							<a class="landing-block-node-card-button landing-semantic-link-image-medium btn g-btn-type-solid text-uppercase g-btn-primary g-bg-transparent--hover g-py-15 g-btn-size-md g-btn-px-m g-rounded-50 g-color-white g-color-white--hover g-font-nunito" href="https://b24-r08mtv.bitrix24.site/#b15739" style="" target="_self">Заказать</a>
-						</div>
-					</header>
-				</article>
-				<!-- End Article -->
-			</div></div>
-	</div>
-</section></div><div id="b15715" class="block-wrapper block-26-6-separator-waves"><div class="landing-block g-pt-0 g-pb-0 g-height-70 g-fill-black-opacity-0_9--first g-fill-black-opacity-0_7--second g-height-20vh--md g-my-minus-2" style="">
-	<svg class="g-width-100x g-height-100x" viewbox="0 0 3184 446" preserveaspectratio="none" xmlns="http://www.w3.org/2000/svg">
-		<path class="fill-first" d="M3184 257.647L3158.22 253.329C3028.5 232.456 2886.86 222.357 2733.29 223.032C2642.26 223.431 2551.78 228.592 2461.84 236.149C2426.54 236.549 2391.09 238.004 2355.34 240.275C2221 231.285 2068.99 226.286 1913.49 231.156C1723.42 237.109 1558.37 264.563 1391.63 286.417C1137.84 264.35 920.847 223.032 661.328 223.032C563.229 223.032 473.232 231.394 391.326 248.135L343.441 243.122C217.846 230.497 109.05 223.812 17.0527 223.07L0 223V0H3184V257.647Z" />
-		<path class="fill-second" d="M2733.29 223.032C2897.09 222.312 3047.33 233.851 3184 257.647V339.233C3184 338.771 2910.31 259.731 2582.38 239.042C2542.25 236.511 2502.17 235.647 2461.89 236.127C2551.82 228.59 2642.28 223.431 2733.29 223.032ZM1845.32 295.894C1568.49 310.033 1352.52 284.477 1144.23 259.829C986.552 241.17 833.274 223.032 661.328 223.032C559.757 223.032 466.872 231.996 382.674 249.926C452.603 251.103 528.079 254.504 609.102 260.128C675.002 264.702 743.206 270.305 813.746 276.1C1114.33 300.792 1457.33 328.97 1845.32 295.894Z" opacity="0.35" />
-		<path class="fill-second" d="M2355 240.297C2220.73 231.276 2068.85 226.29 1913.49 231.156C1759.53 235.978 1621.99 254.907 1486.68 273.529C1400.94 285.329 1316.09 297.005 1228.53 304.892C1472.56 316.132 1739.31 314.555 2029.73 275.756C2143.31 260.583 2250.44 246.954 2355 240.297ZM413.43 250.578C249.63 232.193 111.82 223 0 223V274.754C106.985 254.341 244.795 246.283 413.43 250.578Z" opacity="0.35" />
-		<path class="fill-second" d="M0 274.754C145.792 246.937 348.826 242.062 609.102 260.128C999.516 287.227 1470.77 350.429 2029.73 275.756C2226.59 249.458 2404.1 227.795 2582.38 239.042C2910.31 259.731 3184 338.771 3184 339.233V446H0V274.754Z" />
-	</svg>
-</div></div><div id="b15717" class="block-wrapper block-04-2-one-col-fix-with-title-2"><section class="landing-block landing-semantic-background-color js-animation animation-none animated g-pb-30 g-bg-black-opacity-0_7 g-pt-45" style="">
-	<div class="landing-block-node-inner text-uppercase text-center u-heading-v2-4--bottom g-brd-white" style="">
-		<h6 class="landing-block-node-subtitle landing-semantic-subtitle-medium h6 g-font-size-12 g-color-white g-font-weight-auto g-letter-spacing-inherit g-line-height-1_2 g-mb-15 g-font-nunito" style="">Галерея</h6>
-		<h2 class="landing-block-node-title landing-semantic-title-medium h1 u-heading-v2__title g-font-yeseva-one g-font-weight-auto g-color-primary g-line-height-1_2 g-font-size-30 text-center g-mb-minus-15" style="">О РАБОТЕ ФОТОГРАФА<p>ЛУЧШЕ ВСЕГО ГОВОРЯТ ЕГО РАБОТЫ!</p></h2>
-	</div>
-</section></div><div id="b15719" class="block-wrapper block-32-5-img-grid-3cols-1-wo-gutters"><section class="landing-block g-pt-0 g-pb-0 g-bg-black-opacity-0_7" style="">
-
-	<div class="row no-gutters js-gallery-cards">
-
-		<div class="col-12 col-sm-4">
-			<div class="h-100">
-				<div class="landing-block-node-img-container landing-block-node-img-container-left js-animation h-100 g-pos-rel g-parent u-block-hover animation-none" style="">
-					<img data-fancybox="gallery" class="landing-block-node-img img-fluid g-object-fit-cover h-100 w-100 u-block-hover__main--zoom-v1" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDgwIiBoZWlnaHQ9IjEwODAiPjxyZWN0IGlkPSJiYWNrZ3JvdW5kcmVjdCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgeD0iMCIgeT0iMCIgZmlsbD0iI2RkZCIgZmlsbC1vcGFjaXR5PSIuNyIgc3Ryb2tlPSJub25lIi8+PC9zdmc+" alt="" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}" data-lazy-img="Y" data-src="https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/4_1.jpg" loading="lazy" data-srcset="https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/4_1.jpg 2x" />
-				</div>
-			</div>
-		</div>
-
-		<div class="col-12 col-sm-4">
-			<div class="h-100">
-				<div class="landing-block-node-img-container landing-block-node-img-container-center js-animation h-100 g-pos-rel g-parent u-block-hover animation-none" style="">
-					<img data-fancybox="gallery" class="landing-block-node-img img-fluid g-object-fit-cover h-100 w-100 u-block-hover__main--zoom-v1" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDgwIiBoZWlnaHQ9IjEwODAiPjxyZWN0IGlkPSJiYWNrZ3JvdW5kcmVjdCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgeD0iMCIgeT0iMCIgZmlsbD0iI2RkZCIgZmlsbC1vcGFjaXR5PSIuNyIgc3Ryb2tlPSJub25lIi8+PC9zdmc+" alt="" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}" data-lazy-img="Y" data-src="https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/4_2.jpg" loading="lazy" data-srcset="https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/4_2.jpg 2x" />
-				</div>
-			</div>
-		</div>
-
-		<div class="col-12 col-sm-4">
-			<div class="h-100">
-				<div class="landing-block-node-img-container landing-block-node-img-container-right js-animation h-100 g-pos-rel g-parent u-block-hover animation-none" style="">
-					<img data-fancybox="gallery" class="landing-block-node-img img-fluid g-object-fit-cover h-100 w-100 u-block-hover__main--zoom-v1" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDgwIiBoZWlnaHQ9IjEwODAiPjxyZWN0IGlkPSJiYWNrZ3JvdW5kcmVjdCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgeD0iMCIgeT0iMCIgZmlsbD0iI2RkZCIgZmlsbC1vcGFjaXR5PSIuNyIgc3Ryb2tlPSJub25lIi8+PC9zdmc+" alt="" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}" data-lazy-img="Y" data-src="https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/4_3.jpg" loading="lazy" data-srcset="https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/4_3.jpg 2x" />
-				</div>
-			</div>
-		</div>
-
-	</div>
-
-</section></div><div id="b15721" class="block-wrapper block-32-5-img-grid-3cols-1-wo-gutters"><section class="landing-block g-pt-0 g-pb-0 g-bg-black-opacity-0_7" style="">
-
-	<div class="row no-gutters js-gallery-cards">
-
-		<div class="col-12 col-sm-4">
-			<div class="h-100">
-				<div class="landing-block-node-img-container landing-block-node-img-container-left js-animation h-100 g-pos-rel g-parent u-block-hover animation-none" style="">
-					<img data-fancybox="gallery" class="landing-block-node-img img-fluid g-object-fit-cover h-100 w-100 u-block-hover__main--zoom-v1" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDgwIiBoZWlnaHQ9IjEwODAiPjxyZWN0IGlkPSJiYWNrZ3JvdW5kcmVjdCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgeD0iMCIgeT0iMCIgZmlsbD0iI2RkZCIgZmlsbC1vcGFjaXR5PSIuNyIgc3Ryb2tlPSJub25lIi8+PC9zdmc+" alt="" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}" data-lazy-img="Y" data-src="https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/4_4.jpg" loading="lazy" data-srcset="https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/4_4.jpg 2x" />
-				</div>
-			</div>
-		</div>
-
-		<div class="col-12 col-sm-4">
-			<div class="h-100">
-				<div class="landing-block-node-img-container landing-block-node-img-container-center js-animation h-100 g-pos-rel g-parent u-block-hover animation-none" style="">
-					<img data-fancybox="gallery" class="landing-block-node-img img-fluid g-object-fit-cover h-100 w-100 u-block-hover__main--zoom-v1" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDgwIiBoZWlnaHQ9IjEwODAiPjxyZWN0IGlkPSJiYWNrZ3JvdW5kcmVjdCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgeD0iMCIgeT0iMCIgZmlsbD0iI2RkZCIgZmlsbC1vcGFjaXR5PSIuNyIgc3Ryb2tlPSJub25lIi8+PC9zdmc+" alt="" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}" data-lazy-img="Y" data-src="https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/4_5.jpg" loading="lazy" data-srcset="https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/4_5.jpg 2x" />
-				</div>
-			</div>
-		</div>
-
-		<div class="col-12 col-sm-4">
-			<div class="h-100">
-				<div class="landing-block-node-img-container landing-block-node-img-container-right js-animation h-100 g-pos-rel g-parent u-block-hover animation-none" style="">
-					<img data-fancybox="gallery" class="landing-block-node-img img-fluid g-object-fit-cover h-100 w-100 u-block-hover__main--zoom-v1" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDgwIiBoZWlnaHQ9IjEwODAiPjxyZWN0IGlkPSJiYWNrZ3JvdW5kcmVjdCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgeD0iMCIgeT0iMCIgZmlsbD0iI2RkZCIgZmlsbC1vcGFjaXR5PSIuNyIgc3Ryb2tlPSJub25lIi8+PC9zdmc+" alt="" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}" data-lazy-img="Y" data-src="https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/4_6.jpg" loading="lazy" data-srcset="https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/4_6.jpg 2x" />
-				</div>
-			</div>
-		</div>
-
-	</div>
-
-</section></div><div id="b15723" class="block-wrapper block-32-5-img-grid-3cols-1-wo-gutters"><section class="landing-block g-pt-0 g-pb-0 g-bg-black-opacity-0_7" style="">
-
-	<div class="row no-gutters js-gallery-cards">
-
-		<div class="col-12 col-sm-4">
-			<div class="h-100">
-				<div class="landing-block-node-img-container landing-block-node-img-container-left js-animation h-100 g-pos-rel g-parent u-block-hover animation-none" style="">
-					<img data-fancybox="gallery" class="landing-block-node-img img-fluid g-object-fit-cover h-100 w-100 u-block-hover__main--zoom-v1" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDgwIiBoZWlnaHQ9IjEwODAiPjxyZWN0IGlkPSJiYWNrZ3JvdW5kcmVjdCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgeD0iMCIgeT0iMCIgZmlsbD0iI2RkZCIgZmlsbC1vcGFjaXR5PSIuNyIgc3Ryb2tlPSJub25lIi8+PC9zdmc+" alt="" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}" data-lazy-img="Y" data-src="https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/4_7.jpg" loading="lazy" data-srcset="https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/4_7.jpg 2x" />
-				</div>
-			</div>
-		</div>
-
-		<div class="col-12 col-sm-4">
-			<div class="h-100">
-				<div class="landing-block-node-img-container landing-block-node-img-container-center js-animation h-100 g-pos-rel g-parent u-block-hover animation-none" style="">
-					<img data-fancybox="gallery" class="landing-block-node-img img-fluid g-object-fit-cover h-100 w-100 u-block-hover__main--zoom-v1" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDgwIiBoZWlnaHQ9IjEwODAiPjxyZWN0IGlkPSJiYWNrZ3JvdW5kcmVjdCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgeD0iMCIgeT0iMCIgZmlsbD0iI2RkZCIgZmlsbC1vcGFjaXR5PSIuNyIgc3Ryb2tlPSJub25lIi8+PC9zdmc+" alt="" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}" data-lazy-img="Y" data-src="https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/4_8.jpg" loading="lazy" data-srcset="https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/4_8.jpg 2x" />
-				</div>
-			</div>
-		</div>
-
-		<div class="col-12 col-sm-4">
-			<div class="h-100">
-				<div class="landing-block-node-img-container landing-block-node-img-container-right js-animation h-100 g-pos-rel g-parent u-block-hover animation-none" style="">
-					<img data-fancybox="gallery" class="landing-block-node-img img-fluid g-object-fit-cover h-100 w-100 u-block-hover__main--zoom-v1" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDgwIiBoZWlnaHQ9IjEwODAiPjxyZWN0IGlkPSJiYWNrZ3JvdW5kcmVjdCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgeD0iMCIgeT0iMCIgZmlsbD0iI2RkZCIgZmlsbC1vcGFjaXR5PSIuNyIgc3Ryb2tlPSJub25lIi8+PC9zdmc+" alt="" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}" data-lazy-img="Y" data-src="https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/4_9.jpg" loading="lazy" data-srcset="https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/4_9.jpg 2x" />
-				</div>
-			</div>
-		</div>
-
-	</div>
-
-</section></div><div id="b15725" class="block-wrapper block-52-1-text-with-btn-right"><section class="landing-block g-bg-black-opacity-0_7 g-pt-25 g-pb-70 l-d-xs-none" style="">
-	<div class="landing-block-node-container container g-max-width-container" style="">
-		<div class="row g-flex-centered">
-			<div class="landing-block-node-text landing-semantic-text-medium text-center col-md-8 col-lg-8 js-animation g-color-white animation-none animated g-font-nunito g-mb-minus-15 g-font-size-15 g-line-height-1_6" style=""><p>
-					Еще больше моих работ в Instagram</p></div>
-			<div class="landing-block-node-button-container text-center col-md-4 col-lg-4 js-animation pulse" style="">
-				<a class="landing-block-node-button landing-semantic-link-image-medium btn text-uppercase g-btn-primary g-btn-type-solid g-btn-size-md g-btn-px-m g-rounded-50 g-font-nunito g-color-white g-color-gray-dark-v1--hover" href="#" style="" target="_self">Больше тут</a>
-			</div>
-		</div>
-	</div>
-</section></div><div id="b15727" class="block-wrapper block-52-1-text-with-btn-right"><section class="landing-block g-bg-black-opacity-0_7 g-pt-25 g-pb-70 l-d-md-none l-d-lg-none" style="">
-	<div class="landing-block-node-container container g-max-width-container" style="">
-		<div class="row g-flex-centered">
-			<div class="landing-block-node-text landing-semantic-text-medium text-center col-md-8 col-lg-8 js-animation g-color-white animation-none animated g-font-nunito g-font-size-15 g-line-height-1_6 g-mb-auto" style=""><p>
-					Еще больше моих работ в Instagram</p></div>
-			<div class="landing-block-node-button-container text-center col-md-4 col-lg-4 js-animation pulse" style="">
-				<a class="landing-block-node-button landing-semantic-link-image-medium btn text-uppercase g-btn-primary g-btn-type-solid g-btn-size-md g-btn-px-m g-rounded-50 g-font-nunito g-color-white g-color-gray-dark-v1--hover" href="#" style="" target="_self">Больше тут</a>
-			</div>
-		</div>
-	</div>
-</section></div><div id="b15729" class="block-wrapper block-01-big-with-text-3"><section class="landing-block landing-block-node-img u-bg-overlay g-flex-centered g-bg-img-hero g-height-auto g-bg-none--after g-pt-65 g-pb-65 l-d-xs-none" style="background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOTIwIiBoZWlnaHQ9IjEwODAiPjxyZWN0IGlkPSJiYWNrZ3JvdW5kcmVjdCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgeD0iMCIgeT0iMCIgZmlsbD0iI2RkZCIgZmlsbC1vcGFjaXR5PSIuNyIgc3Ryb2tlPSJub25lIi8+PC9zdmc+);" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}" data-lazy-bg="Y" data-bg="url('https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/5.jpg')|-webkit-image-set(url('https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/5.jpg') 1x, url('https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/5.jpg') 2x)|image-set(url('https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/5.jpg') 1x, url('https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/5.jpg') 2x)" data-src="https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/5.jpg">
-	<div class="landing-block-node-container container g-max-width-800 js-animation u-bg-overlay__inner g-mx-1 text-center zoomIn" style="">
-		<h2 class="landing-block-node-title landing-semantic-title-image-medium text-uppercase g-font-weight-auto g-font-yeseva-one g-color-gray-dark-v1 g-line-height-1_2 g-mb-15 g-font-size-30" style="">Спецпредложение!</h2>
-
-		<div class="landing-block-node-text landing-semantic-text-image-medium g-color-gray-dark-v1 g-mb-20 g-line-height-1_6 g-font-nunito g-font-size-15" data-auto-font-scale="" style="">При заказе свадебной съемки<p>фотосессия <span style="font-weight: bold; color: rgb(0, 0, 0);">&quot;Love Story&quot;</span> в подарок!</p></div>
-		<div class="landing-block-node-button-container" style="">
-			<a href="https://b24-r08mtv.bitrix24.site/#b15739" class="landing-block-node-button landing-semantic-link-image-medium btn g-btn-primary g-btn-type-solid g-btn-size-md text-uppercase g-rounded-50 g-py-15 g-color-white g-color-gray-dark-v1--hover g-font-nunito g-btn-px-m" style="" target="_self">Заказать</a>
-		</div>
-	</div>
-</section></div><div id="b15731" class="block-wrapper block-01-big-with-text-3"><section class="landing-block landing-block-node-img u-bg-overlay g-flex-centered g-bg-img-hero g-height-auto g-bg-none--after g-pt-65 g-pb-65 l-d-md-none l-d-lg-none" style="background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOTIwIiBoZWlnaHQ9IjEwODAiPjxyZWN0IGlkPSJiYWNrZ3JvdW5kcmVjdCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgeD0iMCIgeT0iMCIgZmlsbD0iI2RkZCIgZmlsbC1vcGFjaXR5PSIuNyIgc3Ryb2tlPSJub25lIi8+PC9zdmc+);" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}" data-lazy-bg="Y" data-bg="url('https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/5_m.jpg')|-webkit-image-set(url('https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/5_m.jpg') 1x, url('https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/5_m.jpg') 2x)|image-set(url('https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/5_m.jpg') 1x, url('https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/5_m.jpg') 2x)" data-src="https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/5_m.jpg">
-	<div class="landing-block-node-container container g-max-width-800 js-animation u-bg-overlay__inner g-mx-1 text-center zoomIn" style="">
-		<h2 class="landing-block-node-title landing-semantic-title-image-medium text-uppercase g-font-weight-auto g-font-yeseva-one g-color-gray-dark-v1 g-line-height-1_2 g-mb-15 g-font-size-30" style="">Спецпредложение!</h2>
-
-		<div class="landing-block-node-text landing-semantic-text-image-medium g-color-gray-dark-v1 g-mb-20 g-line-height-1_6 g-font-nunito g-font-size-15" data-auto-font-scale="" style="">При заказе свадебной съемки<p>фотосессия <span style="font-weight: bold; color: rgb(0, 0, 0);">&quot;Love Story&quot;</span> в подарок!</p></div>
-		<div class="landing-block-node-button-container" style="">
-			<a href="https://b24-r08mtv.bitrix24.site/#b15739" class="landing-block-node-button landing-semantic-link-image-medium btn g-btn-primary g-btn-type-solid g-btn-size-md text-uppercase g-rounded-50 g-py-15 g-color-white g-color-gray-dark-v1--hover g-font-nunito g-btn-px-m" style="" target="_self">Заказать</a>
-		</div>
-	</div>
-</section></div><div id="b15733" class="block-wrapper block-04-2-one-col-fix-with-title-2"><section class="landing-block landing-semantic-background-color js-animation g-pb-auto animation-none animated g-bg-black-opacity-0_7 g-pt-80" style="">
-	<div class="landing-block-node-inner text-uppercase text-center u-heading-v2-4--bottom g-brd-white" style="">
-		<h6 class="landing-block-node-subtitle landing-semantic-subtitle-medium h6 g-font-size-12 g-color-white g-font-weight-auto g-letter-spacing-inherit g-line-height-1_2 g-mb-15 g-font-nunito" style="">Отзывы</h6>
-		<h2 class="landing-block-node-title landing-semantic-title-medium h1 u-heading-v2__title g-font-yeseva-one g-font-weight-auto g-line-height-1_2 g-color-primary g-font-size-30 g-mb-minus-15" style="">Вот что обо мне говорят МОИ КЛИЕНТы</h2>
-	</div>
-</section></div><div id="b15735" class="block-wrapper block-29-three-cols-texts-blocks-slider"><section class="landing-block js-animation animation-none animated g-bg-black-opacity-0_7 g-pb-auto" style="">
-
-	<div class="landing-block-slider container" data-slider-autoplay="1" data-slider-autoplay-speed="5000" data-slider-slides-show="3" data-slider-pause-hover="true" data-slider-animation="1">
-
-		<div class="js-carousel g-pb-60 row" data-infinite="true" data-autoplay="true" data-pause-hover="true" data-speed="5000" data-lazy-load="progressive" data-slides-show="3" data-pagi-classes="u-carousel-indicators-v1 g-absolute-centered--x g-bottom-0 text-center" data-responsive="[{
-                 &quot;breakpoint&quot;: 1200,
-                 &quot;settings&quot;: {
-                   &quot;slidesToShow&quot;: 3
-                 }
-               }, {
-                 &quot;breakpoint&quot;: 992,
-                 &quot;settings&quot;: {
-                   &quot;slidesToShow&quot;: 2
-                 }
-               }, {
-                 &quot;breakpoint&quot;: 768,
-                 &quot;settings&quot;: {
-                   &quot;slidesToShow&quot;: 2
-                 }
-               }, {
-                 &quot;breakpoint&quot;: 576,
-                 &quot;settings&quot;: {
-                   &quot;slidesToShow&quot;: 1
-                 }
-               }]" data-init-classes-exclude="[{
-				 &quot;selector&quot;: &quot;.landing-block-card-slider-element&quot;,
-				 &quot;class&quot;: &quot;col-12 col-sm-6 col-lg-4&quot;
-			   }, {
-				 &quot;selector&quot;: &quot;.js-carousel&quot;,
-				 &quot;class&quot;: &quot;row&quot;
-			   }]"><div class="landing-block-card-slider-element js-slide align-self-center g-px-15 mb-1 landing-card slick-slide slick-current slick-active" style="">
-				<blockquote class="landing-block-node-element-text u-blockquote-v8 g-font-size-15 rounded g-pa-25 g-mb-25 g-font-nunito g-line-height-1_6 g-color-black" style="">Обратились к фотографу и ни разу не пожалели! Он вел всю нашу свадьбу от начала до конца, был компетентен во вех вопросах и то что получилось в итоге, даже словами не описать! Просто супер! Спасибо за фото!</blockquote>
-				<div class="media">
-					<img class="landing-block-node-element-img g-width-50 g-height-50 g-object-fit-cover d-flex align-self-center g-rounded-50x u-shadow-v19 g-brd-around g-brd-3 g-brd-white mr-3" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIj48cmVjdCBpZD0iYmFja2dyb3VuZHJlY3QiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHg9IjAiIHk9IjAiIGZpbGw9IiNkZGQiIGZpbGwtb3BhY2l0eT0iLjciIHN0cm9rZT0ibm9uZSIvPjwvc3ZnPg==" alt="" style="" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}" data-lazy-img="Y" data-src="https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/6_1.jpg" loading="lazy" data-srcset="https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/6_1.jpg 2x" />
-					<div class="media-body align-self-center">
-						<h4 class="landing-block-node-element-title g-mb-0 g-color-primary text-uppercase g-font-nunito g-line-height-1_6 g-font-size-17" style="">Оливер Маккарти</h4>
-						<div class="landing-block-node-element-subtitle g-color-white g-font-nunito g-font-size-15 g-line-height-1_5" style=""><span class="d-block">Свадебная фотосессия</span></div>
-					</div>
-				</div>
-			</div><div class="landing-block-card-slider-element js-slide align-self-center g-px-15 mb-1 landing-card slick-slide slick-current slick-active" style="">
-				<blockquote class="landing-block-node-element-text u-blockquote-v8 g-font-size-15 rounded g-pa-25 g-mb-25 g-font-nunito g-line-height-1_6 g-color-black" style="">Наняли фотографа для съемки всего меню в наш небольшой ресторанчик. Съемка прошла непринужденно и профессионально! Никаких нареканий к фотографу, все сделано как надо! Будем обращаться к нему еще!</blockquote>
-				<div class="media">
-					<img class="landing-block-node-element-img g-width-50 g-height-50 g-object-fit-cover d-flex align-self-center g-rounded-50x u-shadow-v19 g-brd-around g-brd-3 g-brd-white mr-3" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIj48cmVjdCBpZD0iYmFja2dyb3VuZHJlY3QiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHg9IjAiIHk9IjAiIGZpbGw9IiNkZGQiIGZpbGwtb3BhY2l0eT0iLjciIHN0cm9rZT0ibm9uZSIvPjwvc3ZnPg==" alt="" style="" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}" data-lazy-img="Y" data-src="https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/6_2.jpg" loading="lazy" data-srcset="https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/6_2.jpg 2x" />
-					<div class="media-body align-self-center">
-						<h4 class="landing-block-node-element-title g-mb-0 g-color-primary text-uppercase g-font-nunito g-line-height-1_6 g-font-size-17" style="">Кевин Нортон</h4>
-						<div class="landing-block-node-element-subtitle g-color-white g-font-nunito g-font-size-15 g-line-height-1_5" style="">Food-съемка</div>
-					</div>
-				</div>
-			</div><div class="landing-block-card-slider-element js-slide align-self-center g-px-15 mb-1 landing-card slick-slide slick-current slick-active" style="">
-				<blockquote class="landing-block-node-element-text u-blockquote-v8 g-font-size-15 rounded g-pa-25 g-mb-25 g-font-nunito g-line-height-1_6 g-color-black" style="">На третью годовщину решили с мужем сделать фотосессию в стиле &quot;Великий Гэтсби&quot; и долго искали фотографа для реализации и вот нашли! Это идеальный фотограф, который понял нас с полуслова и сделал крутые фотки!</blockquote>
-				<div class="media">
-					<img class="landing-block-node-element-img g-width-50 g-height-50 g-object-fit-cover d-flex align-self-center g-rounded-50x u-shadow-v19 g-brd-around g-brd-3 g-brd-white mr-3" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIj48cmVjdCBpZD0iYmFja2dyb3VuZHJlY3QiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHg9IjAiIHk9IjAiIGZpbGw9IiNkZGQiIGZpbGwtb3BhY2l0eT0iLjciIHN0cm9rZT0ibm9uZSIvPjwvc3ZnPg==" alt="" style="" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}" data-lazy-img="Y" data-src="https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/6_3.jpg" loading="lazy" data-srcset="https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/6_3.jpg 2x" />
-					<div class="media-body align-self-center">
-						<h4 class="landing-block-node-element-title g-mb-0 g-color-primary text-uppercase g-font-nunito g-line-height-1_6 g-font-size-17" style="">Мэдлин Купер</h4>
-						<div class="landing-block-node-element-subtitle g-color-white g-font-nunito g-font-size-15 g-line-height-1_5" style="">Семейная фотосъемка</div>
-					</div>
-				</div>
-			</div><div class="landing-block-card-slider-element js-slide align-self-center g-px-15 mb-1 landing-card slick-slide slick-current slick-active" style="">
-				<blockquote class="landing-block-node-element-text u-blockquote-v8 g-font-size-15 rounded g-pa-25 g-mb-25 g-font-nunito g-line-height-1_6 g-color-black" style="">Это просто замечательный фотограф! Он прекрасно знает свое дело и из под его фотоаппарата вышли прекрасные фото, которые будут радовать нас все время! Обязательно обращайтесь к нему, он просто супер!</blockquote>
-				<div class="media">
-					<img class="landing-block-node-element-img g-width-50 g-height-50 g-object-fit-cover d-flex align-self-center g-rounded-50x u-shadow-v19 g-brd-around g-brd-3 g-brd-white mr-3" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIj48cmVjdCBpZD0iYmFja2dyb3VuZHJlY3QiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHg9IjAiIHk9IjAiIGZpbGw9IiNkZGQiIGZpbGwtb3BhY2l0eT0iLjciIHN0cm9rZT0ibm9uZSIvPjwvc3ZnPg==" alt="" style="" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}" data-lazy-img="Y" data-src="https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/6_4.jpg" loading="lazy" data-srcset="https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/6_4.jpg 2x" />
-					<div class="media-body align-self-center">
-						<h4 class="landing-block-node-element-title g-mb-0 g-color-primary text-uppercase g-font-nunito g-line-height-1_6 g-font-size-17" style="">Рут Макдоналд</h4>
-						<div class="landing-block-node-element-subtitle g-color-white g-font-nunito g-font-size-15 g-line-height-1_5" style=""><span class="d-block">Свадебная фотосъемка</span></div>
-					</div>
-				</div>
-			</div></div>
-	</div>
-
-</section></div><div id="b15737" class="block-wrapper block-26-6-separator-waves"><div class="landing-block g-pt-0 g-pb-0 g-height-70 g-fill-black-opacity-0_7--first g-fill-black-opacity-0_9--second g-height-20vh--md g-my-minus-2" style="">
-	<svg class="g-width-100x g-height-100x" viewbox="0 0 3184 446" preserveaspectratio="none" xmlns="http://www.w3.org/2000/svg">
-		<path class="fill-first" d="M3184 257.647L3158.22 253.329C3028.5 232.456 2886.86 222.357 2733.29 223.032C2642.26 223.431 2551.78 228.592 2461.84 236.149C2426.54 236.549 2391.09 238.004 2355.34 240.275C2221 231.285 2068.99 226.286 1913.49 231.156C1723.42 237.109 1558.37 264.563 1391.63 286.417C1137.84 264.35 920.847 223.032 661.328 223.032C563.229 223.032 473.232 231.394 391.326 248.135L343.441 243.122C217.846 230.497 109.05 223.812 17.0527 223.07L0 223V0H3184V257.647Z" />
-		<path class="fill-second" d="M2733.29 223.032C2897.09 222.312 3047.33 233.851 3184 257.647V339.233C3184 338.771 2910.31 259.731 2582.38 239.042C2542.25 236.511 2502.17 235.647 2461.89 236.127C2551.82 228.59 2642.28 223.431 2733.29 223.032ZM1845.32 295.894C1568.49 310.033 1352.52 284.477 1144.23 259.829C986.552 241.17 833.274 223.032 661.328 223.032C559.757 223.032 466.872 231.996 382.674 249.926C452.603 251.103 528.079 254.504 609.102 260.128C675.002 264.702 743.206 270.305 813.746 276.1C1114.33 300.792 1457.33 328.97 1845.32 295.894Z" opacity="0.35" />
-		<path class="fill-second" d="M2355 240.297C2220.73 231.276 2068.85 226.29 1913.49 231.156C1759.53 235.978 1621.99 254.907 1486.68 273.529C1400.94 285.329 1316.09 297.005 1228.53 304.892C1472.56 316.132 1739.31 314.555 2029.73 275.756C2143.31 260.583 2250.44 246.954 2355 240.297ZM413.43 250.578C249.63 232.193 111.82 223 0 223V274.754C106.985 254.341 244.795 246.283 413.43 250.578Z" opacity="0.35" />
-		<path class="fill-second" d="M0 274.754C145.792 246.937 348.826 242.062 609.102 260.128C999.516 287.227 1470.77 350.429 2029.73 275.756C2226.59 249.458 2404.1 227.795 2582.38 239.042C2910.31 259.731 3184 338.771 3184 339.233V446H0V274.754Z" />
-	</svg>
-</div></div><div id="b15739" class="block-wrapper block-04-7-one-col-fix-with-title-and-text-2"><section class="landing-block landing-semantic-background-color js-animation g-pb-20 animation-none animated g-bg-black-opacity-0_9 g-pt-45" style="">
-	<div class="landing-block-node-container container text-center g-max-width-800" style="">
-		<div class="landing-block-node-inner text-uppercase u-heading-v2-4--bottom g-brd-white" style="">
-			<h6 class="landing-block-node-subtitle landing-semantic-subtitle-medium-primary g-font-size-12 g-mb-15 g-font-weight-auto g-line-height-1_2 g-color-white g-font-nunito" style="">ФОРМА ЗАЯВКИ</h6>
-			<h2 class="landing-block-node-title landing-semantic-title-medium u-heading-v2__title g-font-yeseva-one g-font-weight-auto g-color-primary g-line-height-1_2 g-font-size-30 g-mb-minus-15" style="">ЗАКАЖИТЕ ФОТОСЪЕМКУ О КОТОРОЙ ВЫ НИКОГДА НЕ ПОЖАЛЕЕТЕ</h2>
-		</div>
-		<div class="landing-block-node-text landing-semantic-text-medium g-pb-1 g-color-white g-font-size-15 g-font-nunito g-line-height-1_6" style=""><p>Оставьте заявку на фотосессию и я вам перезвоню в течении 15 минут и мы обсудим ваши пожелания, время и место фотосъемки.</p></div>
-	</div>
-</section></div><div id="b15741" class="block-wrapper block-33-15-form-2-light-right-img"><section class="g-pos-rel landing-block g-pt-15 g-pb-70 g-bg-black-opacity-0_9" style="">
-
-	<div class="container">
-
-		<div class="row">
-			<div class="col-md-6">
-				<div class="bitrix24forms g-brd-white-opacity-0_6 u-form-alert-v4" data-b24form-use-style="Y" data-b24form-embed="" data-b24form-design="{&quot;dark&quot;:false,&quot;style&quot;:&quot;classic&quot;,&quot;shadow&quot;:false,&quot;compact&quot;:false,&quot;color&quot;:{&quot;primary&quot;:&quot;--primary&quot;,&quot;primaryText&quot;:&quot;#fff&quot;,&quot;text&quot;:&quot;#000&quot;,&quot;background&quot;:&quot;#ffffff00&quot;,&quot;fieldBorder&quot;:&quot;#fff&quot;,&quot;fieldBackground&quot;:&quot;#f7f7f7&quot;,&quot;fieldFocusBackground&quot;:&quot;#eee&quot;},&quot;border&quot;:{&quot;top&quot;:false,&quot;bottom&quot;:false,&quot;left&quot;:false,&quot;right&quot;:false}}" data-b24form="3|m3g82a|https://cdn-ru.bitrix24.ru/b24194686/crm/form/loader_3.js" style=""><div class="g-landing-alert">CRM-форма появится здесь</div></div>
-			</div>
-			<div class="landing-block-node-img col-md-6 g-min-height-300 g-bg-img-hero g-px-0 g-bg-size-contain-no-repeat" style="background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NzAiIGhlaWdodD0iNTcwIj48cmVjdCBpZD0iYmFja2dyb3VuZHJlY3QiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHg9IjAiIHk9IjAiIGZpbGw9IiNkZGQiIGZpbGwtb3BhY2l0eT0iLjciIHN0cm9rZT0ibm9uZSIvPjwvc3ZnPg==);" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}" data-lazy-bg="Y" data-bg="url('https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/7_2.png')|-webkit-image-set(url('https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/7_2.png') 1x, url('https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/7_2.png') 2x)|image-set(url('https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/7_2.png') 1x, url('https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/7_2.png') 2x)" data-src="https://cdn.bitrix24.site/bitrix/images/landing/krayt/portfolio_photographer/7_2.png"></div>
-		</div>
-	</div>
-</section></div><div id="b15743" class="block-wrapper block-17-2-copyright-with-bgimg"><section class="landing-block js-animation animation-none" style="">
-	<div class="landing-block-node-bgimg u-bg-overlay g-bg-img-hero g-color-white g-py-100 g-bg-primary-opacity-0_8--after" style="" data-pseudo-url="{&quot;text&quot;:&quot;&quot;,&quot;href&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;enabled&quot;:false}">
-		<div class="container u-bg-overlay__inner">
-			<div class="row">
-				<div class="col-md-4 d-flex align-items-center text-center text-md-left g-mb-20 g-mb-0--md">
-					<div class="landing-block-node-copy landing-semantic-text-image-medium w-100 g-color-white mb-0 js-animation text-uppercase g-line-height-1_2 pulse g-font-yeseva-one g-font-size-30" style="">Фотограф<p>ДЖОН МАКМИЛЛАН</p></div>
-				</div>
-
-				<div class="col-md-4 d-flex flex-column text-center align-self-center g-mb-20 g-mb-0--md">
-					<div class="landing-block-node-phone-subtitle landing-semantic-text-image-medium text-uppercase g-color-white mb-0 js-animation g-font-nunito g-font-size-12 g-line-height-1_2 animation-none animated" style="">Номер телефона</div>
-					<a class="landing-block-node-phone-link landing-semantic-link-image-medium g-mt-5 g-color-white js-animation g-font-nunito pulse g-color-black--hover g-font-size-17 g-font-weight-auto" href="tel:+123456789" style="">+123456789</a>
-				</div>
-
-				<div class="col-md-4 d-flex align-items-center">
-					<ul class="list-inline w-100 d-flex flex-wrap justify-content-md-end justify-content-center mb-0"><li class="landing-block-card-social list-inline-item g-mr-10 g-my-5" data-card-preset="facebook">
-				<a class="landing-block-card-social-icon-link u-icon-v2 g-width-35 g-height-35 g-font-size-16 g-brd-white g-brd-primary--hover g-rounded-50x g-color-primary--hover g-bg-black--hover g-color-gray-dark-v1 g-bg-main" href="https://facebook.com" style="" target="_self">
-					<i class="landing-block-card-social-icon fa fa-facebook"></i>
-				</a>
-			</li>
-			<li class="landing-block-card-social list-inline-item g-mr-10 g-my-5" data-card-preset="instagram">
-				<a class="landing-block-card-social-icon-link u-icon-v2 g-width-35 g-height-35 g-font-size-16 g-brd-white g-brd-primary--hover g-rounded-50x g-color-primary--hover g-bg-black--hover g-color-gray-dark-v1 g-bg-main" href="https://instagram.com" style="" target="_self">
-					<i class="landing-block-card-social-icon fa fa-instagram"></i>
-				</a>
-			</li>
-			<li class="landing-block-card-social list-inline-item g-mr-10 g-my-5" data-card-preset="telegram">
-				<a class="landing-block-card-social-icon-link u-icon-v2 g-width-35 g-height-35 g-font-size-16 g-brd-white g-brd-primary--hover g-rounded-50x g-color-primary--hover g-bg-black--hover g-color-gray-dark-v1 g-bg-main" href="https://telegram.com" style="" target="_self">
-					<i class="landing-block-card-social-icon fa fa-telegram"></i>
-				</a>
-			</li>
-			<li class="landing-block-card-social list-inline-item g-mr-10 g-my-5" data-card-preset="pinterest">
-				<a class="landing-block-card-social-icon-link u-icon-v2 g-width-35 g-height-35 g-font-size-16 g-brd-white g-brd-primary--hover g-rounded-50x g-color-primary--hover g-bg-black--hover g-color-gray-dark-v1 g-bg-main" href="https://pinterest.com" style="" target="_self">
-					<i class="landing-block-card-social-icon fa fa-pinterest"></i>
-				</a>
-			</li></ul>
-				</div>
-			</div>
-		</div>
-	</div>
-</section></div>
-</main>
-<script data-skip-moving="true">
-					(function(w,d,u,b){ 'use strict';
-					var s=d.createElement('script');var r=(Date.now()/1000|0);s.async=1;s.src=u+'?'+r;
-					var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
-				})(window,document,'https://cdn-ru.bitrix24.ru/b24194686/crm/site_button/loader_1_5xt0a7.js');
-				</script> <div class="bitrix-footer"><span class="bitrix-footer-text">Заряжено <img src="//b24-101nja.bitrix24.ru/bitrix/images/landing/copyright/logo_ru.svg?1" alt="Битрикс24"> &mdash; Бесплатные Сайты и CRM. <a href="https://www.bitrix24.ru/features/sites.php">Конструктор сайтов с нуля бесплатно</a></span></div>
-
-<script type="text/javascript">if(!window.BX)window.BX={};if(!window.BX.message)window.BX.message=function(mess){if(typeof mess==='object'){for(let i in mess) {BX.message[i]=mess[i];} return true;}};</script>
-<script type="text/javascript">(window.BX||top.BX).message({'JS_CORE_LOADING':'Загрузка...','JS_CORE_NO_DATA':'- Нет данных -','JS_CORE_WINDOW_CLOSE':'Закрыть','JS_CORE_WINDOW_EXPAND':'Развернуть','JS_CORE_WINDOW_NARROW':'Свернуть в окно','JS_CORE_WINDOW_SAVE':'Сохранить','JS_CORE_WINDOW_CANCEL':'Отменить','JS_CORE_WINDOW_CONTINUE':'Продолжить','JS_CORE_H':'ч','JS_CORE_M':'м','JS_CORE_S':'с','JSADM_AI_HIDE_EXTRA':'Скрыть лишние','JSADM_AI_ALL_NOTIF':'Показать все','JSADM_AUTH_REQ':'Требуется авторизация!','JS_CORE_WINDOW_AUTH':'Войти','JS_CORE_IMAGE_FULL':'Полный размер'});</script><script type="text/javascript" src="/bitrix/js/main/core/core.min.js?1671096534220366"></script><script>BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
-</script>
-<script type="text/javascript">(window.BX||top.BX).message({'pull_server_enabled':'Y','pull_config_timestamp':'1645115399','pull_guest_mode':'N','pull_guest_user_id':'0'});(window.BX||top.BX).message({'PULL_OLD_REVISION':'Для продолжения корректной работы с сайтом необходимо перезагрузить страницу.'});</script>
-<script type="text/javascript">(window.BX||top.BX).message({'CORE_CLIPBOARD_COPY_SUCCESS':'Скопировано','CORE_CLIPBOARD_COPY_FAILURE':'Не удалось скопировать'});</script>
-<script type="text/javascript">(window.BX||top.BX).message({'MAIN_SIDEPANEL_CLOSE':'Закрыть','MAIN_SIDEPANEL_PRINT':'Печать','MAIN_SIDEPANEL_NEW_WINDOW':'Открыть в новом окне','MAIN_SIDEPANEL_COPY_LINK':'Скопировать ссылку'});</script>
-<script type="text/javascript">(window.BX||top.BX).message({'AMPM_MODE':false});(window.BX||top.BX).message({'MONTH_1':'Январь','MONTH_2':'Февраль','MONTH_3':'Март','MONTH_4':'Апрель','MONTH_5':'Май','MONTH_6':'Июнь','MONTH_7':'Июль','MONTH_8':'Август','MONTH_9':'Сентябрь','MONTH_10':'Октябрь','MONTH_11':'Ноябрь','MONTH_12':'Декабрь','MONTH_1_S':'января','MONTH_2_S':'февраля','MONTH_3_S':'марта','MONTH_4_S':'апреля','MONTH_5_S':'мая','MONTH_6_S':'июня','MONTH_7_S':'июля','MONTH_8_S':'августа','MONTH_9_S':'сентября','MONTH_10_S':'октября','MONTH_11_S':'ноября','MONTH_12_S':'декабря','MON_1':'янв','MON_2':'фев','MON_3':'мар','MON_4':'апр','MON_5':'май','MON_6':'июн','MON_7':'июл','MON_8':'авг','MON_9':'сен','MON_10':'окт','MON_11':'ноя','MON_12':'дек','DAY_OF_WEEK_0':'Воскресенье','DAY_OF_WEEK_1':'Понедельник','DAY_OF_WEEK_2':'Вторник','DAY_OF_WEEK_3':'Среда','DAY_OF_WEEK_4':'Четверг','DAY_OF_WEEK_5':'Пятница','DAY_OF_WEEK_6':'Суббота','DOW_0':'Вс','DOW_1':'Пн','DOW_2':'Вт','DOW_3':'Ср','DOW_4':'Чт','DOW_5':'Пт','DOW_6':'Сб','FD_SECOND_AGO_0':'#VALUE# секунд назад','FD_SECOND_AGO_1':'#VALUE# секунду назад','FD_SECOND_AGO_10_20':'#VALUE# секунд назад','FD_SECOND_AGO_MOD_1':'#VALUE# секунду назад','FD_SECOND_AGO_MOD_2_4':'#VALUE# секунды назад','FD_SECOND_AGO_MOD_OTHER':'#VALUE# секунд назад','FD_SECOND_DIFF_0':'#VALUE# секунд','FD_SECOND_DIFF_1':'#VALUE# секунда','FD_SECOND_DIFF_10_20':'#VALUE# секунд','FD_SECOND_DIFF_MOD_1':'#VALUE# секунда','FD_SECOND_DIFF_MOD_2_4':'#VALUE# секунды','FD_SECOND_DIFF_MOD_OTHER':'#VALUE# секунд','FD_SECOND_SHORT':'#VALUE#с','FD_MINUTE_AGO_0':'#VALUE# минут назад','FD_MINUTE_AGO_1':'#VALUE# минуту назад','FD_MINUTE_AGO_10_20':'#VALUE# минут назад','FD_MINUTE_AGO_MOD_1':'#VALUE# минуту назад','FD_MINUTE_AGO_MOD_2_4':'#VALUE# минуты назад','FD_MINUTE_AGO_MOD_OTHER':'#VALUE# минут назад','FD_MINUTE_DIFF_0':'#VALUE# минут','FD_MINUTE_DIFF_1':'#VALUE# минута','FD_MINUTE_DIFF_10_20':'#VALUE# минут','FD_MINUTE_DIFF_MOD_1':'#VALUE# минута','FD_MINUTE_DIFF_MOD_2_4':'#VALUE# минуты','FD_MINUTE_DIFF_MOD_OTHER':'#VALUE# минут','FD_MINUTE_0':'#VALUE# минут','FD_MINUTE_1':'#VALUE# минуту','FD_MINUTE_10_20':'#VALUE# минут','FD_MINUTE_MOD_1':'#VALUE# минуту','FD_MINUTE_MOD_2_4':'#VALUE# минуты','FD_MINUTE_MOD_OTHER':'#VALUE# минут','FD_MINUTE_SHORT':'#VALUE#мин','FD_HOUR_AGO_0':'#VALUE# часов назад','FD_HOUR_AGO_1':'#VALUE# час назад','FD_HOUR_AGO_10_20':'#VALUE# часов назад','FD_HOUR_AGO_MOD_1':'#VALUE# час назад','FD_HOUR_AGO_MOD_2_4':'#VALUE# часа назад','FD_HOUR_AGO_MOD_OTHER':'#VALUE# часов назад','FD_HOUR_DIFF_0':'#VALUE# часов','FD_HOUR_DIFF_1':'#VALUE# час','FD_HOUR_DIFF_10_20':'#VALUE# часов','FD_HOUR_DIFF_MOD_1':'#VALUE# час','FD_HOUR_DIFF_MOD_2_4':'#VALUE# часа','FD_HOUR_DIFF_MOD_OTHER':'#VALUE# часов','FD_HOUR_SHORT':'#VALUE#ч','FD_YESTERDAY':'вчера','FD_TODAY':'сегодня','FD_TOMORROW':'завтра','FD_DAY_AGO_0':'#VALUE# дней назад','FD_DAY_AGO_1':'#VALUE# день назад','FD_DAY_AGO_10_20':'#VALUE# дней назад','FD_DAY_AGO_MOD_1':'#VALUE# день назад','FD_DAY_AGO_MOD_2_4':'#VALUE# дня назад','FD_DAY_AGO_MOD_OTHER':'#VALUE# дней назад','FD_DAY_DIFF_0':'#VALUE# дней','FD_DAY_DIFF_1':'#VALUE# день','FD_DAY_DIFF_10_20':'#VALUE# дней','FD_DAY_DIFF_MOD_1':'#VALUE# день','FD_DAY_DIFF_MOD_2_4':'#VALUE# дня','FD_DAY_DIFF_MOD_OTHER':'#VALUE# дней','FD_DAY_AT_TIME':'#DAY# в #TIME#','FD_DAY_SHORT':'#VALUE#д','FD_MONTH_AGO_0':'#VALUE# месяцев назад','FD_MONTH_AGO_1':'#VALUE# месяц назад','FD_MONTH_AGO_10_20':'#VALUE# месяцев назад','FD_MONTH_AGO_MOD_1':'#VALUE# месяц назад','FD_MONTH_AGO_MOD_2_4':'#VALUE# месяца назад','FD_MONTH_AGO_MOD_OTHER':'#VALUE# месяцев назад','FD_MONTH_DIFF_0':'#VALUE# месяцев','FD_MONTH_DIFF_1':'#VALUE# месяц','FD_MONTH_DIFF_10_20':'#VALUE# месяцев','FD_MONTH_DIFF_MOD_1':'#VALUE# месяц','FD_MONTH_DIFF_MOD_2_4':'#VALUE# месяца','FD_MONTH_DIFF_MOD_OTHER':'#VALUE# месяцев','FD_MONTH_SHORT':'#VALUE#мес','FD_YEARS_AGO_0':'#VALUE# лет назад','FD_YEARS_AGO_1':'#VALUE# год назад','FD_YEARS_AGO_10_20':'#VALUE# лет назад','FD_YEARS_AGO_MOD_1':'#VALUE# год назад','FD_YEARS_AGO_MOD_2_4':'#VALUE# года назад','FD_YEARS_AGO_MOD_OTHER':'#VALUE# лет назад','FD_YEARS_DIFF_0':'#VALUE# лет','FD_YEARS_DIFF_1':'#VALUE# год','FD_YEARS_DIFF_10_20':'#VALUE# лет','FD_YEARS_DIFF_MOD_1':'#VALUE# год','FD_YEARS_DIFF_MOD_2_4':'#VALUE# года','FD_YEARS_DIFF_MOD_OTHER':'#VALUE# лет','FD_YEARS_SHORT_0':'#VALUE#л','FD_YEARS_SHORT_1':'#VALUE#г','FD_YEARS_SHORT_10_20':'#VALUE#л','FD_YEARS_SHORT_MOD_1':'#VALUE#г','FD_YEARS_SHORT_MOD_2_4':'#VALUE#г','FD_YEARS_SHORT_MOD_OTHER':'#VALUE#л','CAL_BUTTON':'Выбрать','CAL_TIME_SET':'Установить время','CAL_TIME':'Время','FD_LAST_SEEN_TOMORROW':'завтра в #TIME#','FD_LAST_SEEN_NOW':'только что','FD_LAST_SEEN_TODAY':'сегодня в #TIME#','FD_LAST_SEEN_YESTERDAY':'вчера в #TIME#','FD_LAST_SEEN_MORE_YEAR':'более года назад'});</script>
-<script type="text/javascript">(window.BX||top.BX).message({'WEEK_START':'1'});</script>
-<script type="text/javascript">(window.BX||top.BX).message({'JS_CORE_LOADING':'Загрузка...','JS_CORE_NO_DATA':'- Нет данных -','JS_CORE_WINDOW_CLOSE':'Закрыть','JS_CORE_WINDOW_EXPAND':'Развернуть','JS_CORE_WINDOW_NARROW':'Свернуть в окно','JS_CORE_WINDOW_SAVE':'Сохранить','JS_CORE_WINDOW_CANCEL':'Отменить','JS_CORE_WINDOW_CONTINUE':'Продолжить','JS_CORE_H':'ч','JS_CORE_M':'м','JS_CORE_S':'с','JSADM_AI_HIDE_EXTRA':'Скрыть лишние','JSADM_AI_ALL_NOTIF':'Показать все','JSADM_AUTH_REQ':'Требуется авторизация!','JS_CORE_WINDOW_AUTH':'Войти','JS_CORE_IMAGE_FULL':'Полный размер'});</script>
-<script type="text/javascript">(window.BX||top.BX).message({'JC_CORE_TREE_SELECT_CONTROL':'Выберите условие','JC_CORE_TREE_ADD_CONTROL':'Добавить условие','JC_CORE_TREE_DELETE_CONTROL':'Удалить условие','JC_CORE_TREE_CONTROL_DATETIME_ICON':'Нажмите для выбора даты','JC_CORE_TREE_CONDITION_ERROR':'Ошибка в условии','JC_CORE_TREE_CONDITION_FATAL_ERROR':'Неустранимая ошибка в условии. Рекомендуется его удалить'});</script>
-<script type="text/javascript">(window.BX||top.BX).message({'LANGUAGE_ID':'ru','FORMAT_DATE':'DD.MM.YYYY','FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS','COOKIE_PREFIX':'BITRIX_SM','SERVER_TZ_OFFSET':'10800','UTF_MODE':'Y','SITE_ID':'s1','SITE_DIR':'/','USER_ID':'','SERVER_TIME':'1673512476','USER_TZ_OFFSET':'0','USER_TZ_AUTO':'Y','bitrix_sessid':'844ba3493df3db32ce8198f4e23f34d3'});</script><script type="text/javascript" src="/bitrix/js/ui/dexie/dist/dexie3.bundle.min.js?166202082188295"></script>
-<script type="text/javascript" src="/bitrix/js/main/core/core_ls.min.js?14328944187365"></script>
-<script type="text/javascript" src="/bitrix/js/main/core/core_fx.min.js?14909536449768"></script>
-<script type="text/javascript" src="/bitrix/js/main/core/core_frame_cache.min.js?164923745511264"></script>
-<script type="text/javascript" src="/bitrix/js/pull/protobuf/protobuf.min.js?159231549176433"></script>
-<script type="text/javascript" src="/bitrix/js/pull/protobuf/model.min.js?159231549114190"></script>
-<script type="text/javascript" src="/bitrix/js/rest/client/rest.client.min.js?16015491189240"></script>
-<script type="text/javascript" src="/bitrix/js/pull/client/pull.client.min.js?166903990348293"></script>
-<script type="text/javascript" src="/bitrix/js/landing/metrika/dist/metrika.bundle.min.js?16239365903054"></script>
-<script type="text/javascript" src="/bitrix/js/main/pageobject/pageobject.min.js?1584117434570"></script>
-<script type="text/javascript" src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?166798600465492"></script>
-<script type="text/javascript" src="/bitrix/js/main/core/core_clipboard.min.js?16572140002246"></script>
-<script type="text/javascript" src="/bitrix/js/main/sidepanel/manager.min.js?166798600419517"></script>
-<script type="text/javascript" src="/bitrix/js/main/sidepanel/slider.min.js?166798600431250"></script>
-<script type="text/javascript" src="/bitrix/js/main/date/main.date.min.js?165721400016388"></script>
-<script type="text/javascript" src="/bitrix/js/main/core/core_date.min.js?161286731026661"></script>
-<script type="text/javascript" src="/bitrix/js/main/core/core_window.min.js?163974535776326"></script>
-<script type="text/javascript" src="/bitrix/js/catalog/core_tree.min.js?165634246245324"></script>
-<script type="text/javascript" src="/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.min.js?15362428577124"></script>
-<script type="text/javascript">if (Intl && Intl.DateTimeFormat) document.cookie="BITRIX_SM_TZ="+Intl.DateTimeFormat().resolvedOptions().timeZone+"; path=/; expires=Mon, 01 Jan 2024 00:00:00 +0300";</script>
-<script>
-	(function(w,d,u){
-		var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/86400000|0);
-		var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
-	})(window,document,'https://cdn-ru.bitrix24.ru/b24194686/landing/assets/assets_webpack_75932fdd82_1673512460.js');
-</script>
-
-
-
-<script type="text/javascript" src="/bitrix/templates/landing24/assets/js/helpers/lazyload.min.js?16454331982105"></script>
-<script type="text/javascript" src="/bitrix/components/bitrix/landing.pub/templates/.default/script.min.js?16355193374520"></script>
-<script>
-	BX.namespace("BX.Landing");
-	BX.Landing.getMode = () => "view";
-</script>
-<script type="text/javascript">var _ba = _ba || []; _ba.push(["aid", "bc2cad9153cb418bb2dfd5602c3c3754"]); _ba.push(["host", "b24-101nja.bitrix24.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();</script>
-
-
-<script>
-	(function()
-	{
-		new BX.Landing.Metrika();
-	})();
-</script>
-
-
-<script>
-
-</script>
-</body>
-</html>
+<!DOCTYPE html><html><head><meta charset="utf-8" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!--metatextblock--><title>Персональный стилист</title><meta name="description" content="Шаблон персонального стилиста с портфолио, процессом работы, услугами, формой обратной связи, блогом и контактами " /> <meta property="og:url" content="http://project6634346.tilda.ws" /><meta property="og:title" content="Персональный стилист" /><meta property="og:description" content="Шаблон персонального стилиста с портфолио, процессом работы, услугами, формой обратной связи, блогом и контактами " /><meta property="og:type" content="website" /><meta property="og:image" content="https://static.tildacdn.info/tild3131-3136-4634-b362-363166303265/-/resize/504x/kaboompics_Portrait_.jpg" /><link rel="canonical" href="http://project6634346.tilda.ws"><!--/metatextblock--><meta name="format-detection" content="telephone=no" /><meta http-equiv="x-dns-prefetch-control" content="on"><link rel="dns-prefetch" href="https://ws.tildacdn.com"><link rel="dns-prefetch" href="https://static.tildacdn.info"><meta name="robots" content="nofollow" /><link rel="shortcut icon" href="https://static.tildacdn.info/img/tildafavicon.ico" type="image/x-icon" /><!-- Assets --><script src="https://neo.tildacdn.com/js/tilda-fallback-1.0.min.js" charset="utf-8" async></script><link rel="stylesheet" href="https://static.tildacdn.info/css/tilda-grid-3.0.min.css" type="text/css" media="all" onerror="this.loaderr='y';"/><link rel="stylesheet" href="/tilda-blocks-page33182836.min.css?t=1673512004" type="text/css" media="all" onerror="this.loaderr='y';" /><link rel="stylesheet" href="https://static.tildacdn.info/css/tilda-animation-2.0.min.css" type="text/css" media="all" onerror="this.loaderr='y';" /><link rel="stylesheet" href="https://static.tildacdn.info/css/tilda-slds-1.4.min.css" type="text/css" media="print" onload="this.media='all';" onerror="this.loaderr='y';" /><noscript><link rel="stylesheet" href="https://static.tildacdn.info/css/tilda-slds-1.4.min.css" type="text/css" media="all" /></noscript><link rel="stylesheet" href="https://static.tildacdn.info/css/tilda-cover-1.0.min.css" type="text/css" media="all" onerror="this.loaderr='y';" /><link rel="stylesheet" href="https://static.tildacdn.info/css/tilda-forms-1.0.min.css" type="text/css" media="all" onerror="this.loaderr='y';" /><link rel="stylesheet" href="https://static.tildacdn.info/css/fonts-tildasans.css" type="text/css" media="all" onerror="this.loaderr='y';" /><script type="text/javascript">(function (d) {
+if (!d.visibilityState) {
+var s = d.createElement('script');
+s.src = 'https://static.tildacdn.info/js/tilda-polyfill-1.0.min.js';
+d.getElementsByTagName('head')[0].appendChild(s);
+}
+})(document);
+function t_onReady(func) {
+if (document.readyState != 'loading') {
+func();
+} else {
+document.addEventListener('DOMContentLoaded', func);
+}
+}
+function t_onFuncLoad(funcName, okFunc, time) {
+if (typeof window[funcName] === 'function') {
+okFunc();
+} else {
+setTimeout(function() {
+t_onFuncLoad(funcName, okFunc, time);
+},(time || 100));
+}
+}function t_throttle(fn, threshhold, scope) {return function () {fn.apply(scope || this, arguments);};}</script><script src="https://static.tildacdn.info/js/tilda-scripts-3.0.min.js" charset="utf-8" defer onerror="this.loaderr='y';"></script><script src="/tilda-blocks-page33182836.min.js?t=1673512004" charset="utf-8" async onerror="this.loaderr='y';"></script><script src="https://static.tildacdn.info/js/lazyload-1.3.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script><script src="https://static.tildacdn.info/js/tilda-animation-2.0.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script><script src="https://static.tildacdn.info/js/tilda-menu-1.0.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script><script src="https://static.tildacdn.info/js/tilda-slds-1.4.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script><script src="https://static.tildacdn.info/js/hammer.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script><script src="https://static.tildacdn.info/js/masonry-imagesloaded.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script><script src="https://static.tildacdn.info/js/tilda-cover-1.0.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script><script src="https://static.tildacdn.info/js/tilda-forms-1.0.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script><script src="https://static.tildacdn.info/js/tilda-events-1.0.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script><script type="text/javascript">window.dataLayer = window.dataLayer || [];</script><script type="text/javascript">(function () {
+if((/bot|google|yandex|baidu|bing|msn|duckduckbot|teoma|slurp|crawler|spider|robot|crawling|facebook/i.test(navigator.userAgent))===false && typeof(sessionStorage)!='undefined' && sessionStorage.getItem('visited')!=='y' && document.visibilityState){
+var style=document.createElement('style');
+style.type='text/css';
+style.innerHTML='@media screen and (min-width: 980px) {.t-records {opacity: 0;}.t-records_animated {-webkit-transition: opacity ease-in-out .2s;-moz-transition: opacity ease-in-out .2s;-o-transition: opacity ease-in-out .2s;transition: opacity ease-in-out .2s;}.t-records.t-records_visible {opacity: 1;}}';
+document.getElementsByTagName('head')[0].appendChild(style);
+function t_setvisRecs(){
+var alr=document.querySelectorAll('.t-records');
+Array.prototype.forEach.call(alr, function(el) {
+el.classList.add("t-records_animated");
+});
+setTimeout(function () {
+Array.prototype.forEach.call(alr, function(el) {
+el.classList.add("t-records_visible");
+});
+sessionStorage.setItem("visited", "y");
+}, 400);
+} 
+document.addEventListener('DOMContentLoaded', t_setvisRecs);
+}
+})();</script></head><body class="t-body" style="margin:0;"><!--allrecords--><div id="allrecords" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="6634346" data-tilda-page-id="33182836" data-tilda-formskey="21201c4277280b536e052bf8c6634346" data-tilda-lazy="yes"><div id="rec536373713" class="r t-rec" style=" " data-animationappear="off" data-record-type="257" ><!-- T228 --><div id="nav536373713marker"></div><div class="tmenu-mobile" ><div class="tmenu-mobile__container"><div class="tmenu-mobile__text t-name t-name_md" field="menu_mob_title">&nbsp;</div><div class="t-menuburger t-menuburger_first "><span style="background-color:#fff;"></span><span style="background-color:#fff;"></span><span style="background-color:#fff;"></span><span style="background-color:#fff;"></span></div><script>function t_menuburger_init(recid) {
+var rec = document.querySelector('#rec' + recid);
+if (!rec) return;
+var burger = rec.querySelector('.t-menuburger');
+if (!burger) return;
+var isSecondStyle = burger.classList.contains('t-menuburger_second');
+if (isSecondStyle && !window.isMobile && !('ontouchend' in document)) {
+burger.addEventListener('mouseenter', function() {
+if (burger.classList.contains('t-menuburger-opened')) return;
+burger.classList.remove('t-menuburger-unhovered');
+burger.classList.add('t-menuburger-hovered');
+});
+burger.addEventListener('mouseleave', function() {
+if (burger.classList.contains('t-menuburger-opened')) return;
+burger.classList.remove('t-menuburger-hovered');
+burger.classList.add('t-menuburger-unhovered');
+setTimeout(function() {
+burger.classList.remove('t-menuburger-unhovered');
+}, 300);
+});
+}
+if (!burger.closest('.tmenu-mobile') &&
+!burger.closest('.t450__burger_container') &&
+!burger.closest('.t204__burger')) {
+burger.addEventListener('click', function() {
+burger.classList.toggle('t-menuburger-opened');
+burger.classList.remove('t-menuburger-unhovered');
+});
+}
+var menu = rec.querySelector('[data-menu="yes"]');
+if (!menu) return;
+var menuLinks = menu.querySelectorAll('.t-menu__link-item');
+var submenuClassList = ['t978__menu-link_hook', 't978__tm-link', 't966__tm-link', 't794__tm-link', 't-menusub__target-link'];
+Array.prototype.forEach.call(menuLinks, function (link) {
+link.addEventListener('click', function () {
+var isSubmenuHook = submenuClassList.some(function (submenuClass) {
+return link.classList.contains(submenuClass);
+});
+if (isSubmenuHook) return;
+burger.classList.remove('t-menuburger-opened');
+});
+});
+}
+t_onReady(function() {
+t_onFuncLoad('t_menuburger_init', function(){t_menuburger_init('536373713');});
+});</script><style>.t-menuburger {
+position: relative;
+flex-shrink: 0;
+width: 28px;
+height: 20px;
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+transition: .5s ease-in-out;
+cursor: pointer;
+z-index: 999;
+}
+/*---menu burger lines---*/
+.t-menuburger span {
+display: block;
+position: absolute;
+width: 100%;
+opacity: 1;
+left: 0;
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+transition: .25s ease-in-out;
+height: 3px;
+background-color: #000;
+}
+.t-menuburger span:nth-child(1) {
+top: 0px;
+}
+.t-menuburger span:nth-child(2),
+.t-menuburger span:nth-child(3) {
+top: 8px;
+}
+.t-menuburger span:nth-child(4) {
+top: 16px;
+}
+/*menu burger big*/
+.t-menuburger__big {
+width: 42px;
+height: 32px;
+}
+.t-menuburger__big span {
+height: 5px;
+}
+.t-menuburger__big span:nth-child(2),
+.t-menuburger__big span:nth-child(3) {
+top: 13px;
+}
+.t-menuburger__big span:nth-child(4) {
+top: 26px;
+}
+/*menu burger small*/
+.t-menuburger__small {
+width: 22px;
+height: 14px;
+}
+.t-menuburger__small span {
+height: 2px;
+}
+.t-menuburger__small span:nth-child(2),
+.t-menuburger__small span:nth-child(3) {
+top: 6px;
+}
+.t-menuburger__small span:nth-child(4) {
+top: 12px;
+}
+/*menu burger opened*/
+.t-menuburger-opened span:nth-child(1) {
+top: 8px;
+width: 0%;
+left: 50%;
+}
+.t-menuburger-opened span:nth-child(2) {
+-webkit-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+.t-menuburger-opened span:nth-child(3) {
+-webkit-transform: rotate(-45deg);
+transform: rotate(-45deg);
+}
+.t-menuburger-opened span:nth-child(4) {
+top: 8px;
+width: 0%;
+left: 50%;
+}
+.t-menuburger-opened.t-menuburger__big span:nth-child(1) {
+top: 6px;
+}
+.t-menuburger-opened.t-menuburger__big span:nth-child(4) {
+top: 18px;
+}
+.t-menuburger-opened.t-menuburger__small span:nth-child(1),
+.t-menuburger-opened.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+/*---menu burger first style---*/
+@media (hover), (min-width:0\0) {
+.t-menuburger_first:hover span:nth-child(1) {
+transform: translateY(1px);
+}
+.t-menuburger_first:hover span:nth-child(4) {
+transform: translateY(-1px);
+}
+.t-menuburger_first.t-menuburger__big:hover span:nth-child(1) {
+transform: translateY(3px);
+}
+.t-menuburger_first.t-menuburger__big:hover span:nth-child(4) {
+transform: translateY(-3px);
+}
+}
+/*---menu burger second style---*/
+.t-menuburger_second span:nth-child(2),
+.t-menuburger_second span:nth-child(3) {
+width: 80%;
+left: 20%;
+right: 0;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_second.t-menuburger-hovered span:nth-child(2),
+.t-menuburger_second.t-menuburger-hovered span:nth-child(3) {
+animation: t-menuburger-anim 0.3s ease-out normal forwards;
+}
+.t-menuburger_second.t-menuburger-unhovered span:nth-child(2),
+.t-menuburger_second.t-menuburger-unhovered span:nth-child(3) {
+animation: t-menuburger-anim2 0.3s ease-out normal forwards;
+}
+}
+.t-menuburger_second.t-menuburger-opened span:nth-child(2),
+.t-menuburger_second.t-menuburger-opened span:nth-child(3){
+left: 0;
+right: 0;
+width: 100%!important;
+}
+/*---menu burger third style---*/
+.t-menuburger_third span:nth-child(4) {
+width: 70%;
+left: unset;
+right: 0;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_third:not(.t-menuburger-opened):hover span:nth-child(4) {
+width: 100%;
+}
+}
+.t-menuburger_third.t-menuburger-opened span:nth-child(4) {
+width: 0!important;
+right: 50%;
+}
+/*---menu burger fourth style---*/
+.t-menuburger_fourth {
+height: 12px;
+}
+.t-menuburger_fourth.t-menuburger__small {
+height: 8px;
+}
+.t-menuburger_fourth.t-menuburger__big {
+height: 18px;
+}
+.t-menuburger_fourth span:nth-child(2),
+.t-menuburger_fourth span:nth-child(3) {
+top: 4px;
+opacity: 0;
+}
+.t-menuburger_fourth span:nth-child(4) {
+top: 8px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__small span:nth-child(3) {
+top: 3px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__small span:nth-child(3) {
+top: 3px;
+}
+.t-menuburger_fourth.t-menuburger__small span:nth-child(4) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__big span:nth-child(2),
+.t-menuburger_fourth.t-menuburger__big span:nth-child(3) {
+top: 6px;
+}
+.t-menuburger_fourth.t-menuburger__big span:nth-child(4) {
+top: 12px;
+}
+@media (hover), (min-width:0\0) {
+.t-menuburger_fourth:not(.t-menuburger-opened):hover span:nth-child(1) {
+transform: translateY(1px);
+}
+.t-menuburger_fourth:not(.t-menuburger-opened):hover span:nth-child(4) {
+transform: translateY(-1px);
+}
+.t-menuburger_fourth.t-menuburger__big:not(.t-menuburger-opened):hover span:nth-child(1) {
+transform: translateY(3px);
+}
+.t-menuburger_fourth.t-menuburger__big:not(.t-menuburger-opened):hover span:nth-child(4) {
+transform: translateY(-3px);
+}
+}
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(1),
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(4) {
+top: 4px;
+}
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(2),
+.t-menuburger_fourth.t-menuburger-opened span:nth-child(3) {
+opacity: 1;
+}
+/*---menu burger animations---*/
+@keyframes t-menuburger-anim {
+0% {
+width: 80%;
+left: 20%;
+right: 0;
+}
+50% {
+width: 100%;
+left: 0;
+right: 0;
+}
+100% {
+width: 80%;
+left: 0;
+right: 20%;
+}
+}
+@keyframes t-menuburger-anim2 {
+0% {
+width: 80%;
+left: 0;
+}
+50% {
+width: 100%;
+right: 0;
+left: 0;
+}
+100% {
+width: 80%;
+left: 20%;
+right: 0;
+}
+}</style> </div></div><style>.tmenu-mobile {
+background-color: #111;
+display: none;
+width: 100%;
+top: 0;
+z-index: 990;
+}
+.tmenu-mobile_positionfixed {
+position: fixed;
+}
+.tmenu-mobile__text {
+color: #fff;
+}
+.tmenu-mobile__container {
+min-height: 64px;
+padding: 20px;
+position: relative;
+box-sizing: border-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-align-items: center;
+-ms-flex-align: center;
+align-items: center;
+-webkit-justify-content: space-between;
+-ms-flex-pack: justify;
+justify-content: space-between;
+}
+.tmenu-mobile__list {
+display: block;
+}
+.tmenu-mobile__burgerlogo {
+display: inline-block;
+font-size: 24px;
+font-weight: 400;
+white-space: nowrap;
+vertical-align: middle;
+}
+.tmenu-mobile__imglogo {
+height: auto;
+display: block;
+max-width: 300px!important;
+box-sizing: border-box;
+padding: 0;
+margin: 0 auto;
+}
+@media screen and (max-width: 980px) {
+.tmenu-mobile__menucontent_hidden {
+display: none;
+height: 100%;
+}
+.tmenu-mobile {
+display: block;
+}
+}
+@media screen and (max-width: 980px) {
+#rec536373713 .tmenu-mobile {
+background-color: #1a1a1a;
+}
+#rec536373713 .t-menuburger {
+-webkit-order: 1;
+-ms-flex-order: 1;
+order: 1;
+}
+}</style><div id="nav536373713" class="t228 t228__positionabsolute tmenu-mobile__menucontent_hidden" style=" " data-bgcolor-hex="" data-bgcolor-rgba="" data-navmarker="nav536373713marker" data-appearoffset="" data-bgopacity-two="" data-menushadow="" data-bgopacity="0.50" data-menu-items-align="left" data-menu="yes"><div class="t228__maincontainer t228__c12collumns" style=""><div class="t228__padding40px"></div><div class="t228__leftside"></div><div class="t228__centerside t228__menualign_left"><nav class="t228__centercontainer" 
+aria-label="Основные разделы на странице"><ul class="t228__list" 
+role="menubar" aria-label="Основные разделы на странице"><li class="t228__list_item" 
+role="none" 
+style="padding:0 15px 0 0;"><a class="t-menu__link-item" 
+href="#portfolio"
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="1" 
+style="color:#ffffff;font-weight:600;">Портфолио</a></li><li class="t228__list_item" 
+role="none" 
+style="padding:0 15px;"><a class="t-menu__link-item" 
+href="#services"
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="2" 
+style="color:#ffffff;font-weight:600;">Услуги</a></li><li class="t228__list_item" 
+role="none" 
+style="padding:0 0 0 15px;"><a class="t-menu__link-item" 
+href="#blog"
+role="menuitem" tabindex="0" data-menu-submenu-hook="" data-menu-item-number="3" 
+style="color:#ffffff;font-weight:600;">Блог</a></li></ul></nav></div><div class="t228__rightside"><div class="t228__rightcontainer"><div class="t-sociallinks"><div class="t-sociallinks__wrapper"><!-- new soclinks --><div class="t-sociallinks__item t-sociallinks__item_twitter"><a href="/" target="_blank" rel="nofollow" style="width: 30px; height: 30px;"><svg class="t-sociallinks__svg" width=30px height=30px viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M50 100c27.614 0 50-22.386 50-50S77.614 0 50 0 0 22.386 0 50s22.386 50 50 50Zm19.091-63.636c2.046-.227 4.09-.682 5.909-1.591-1.364 2.045-2.954 3.863-5.228 5v1.364c0 13.636-10.227 29.09-29.09 29.09-5.909 0-11.137-1.59-15.682-4.545.909.227 1.59.227 2.5.227 4.773 0 9.318-1.59 12.727-4.318-4.545 0-8.181-2.955-9.545-7.046.455.227 1.137.227 1.818.227.907 0 1.814-.226 2.72-.453l.008-.002c-4.772-.909-8.182-5-8.182-10v-.227a8.196 8.196 0 0 0 4.546 1.364c-2.727-1.819-4.546-4.773-4.546-8.41 0-2.045.455-3.636 1.364-5.226 5.227 6.136 12.727 10.227 21.136 10.682-.227-.682-.227-1.364-.227-2.273A10.184 10.184 0 0 1 59.546 30c2.954 0 5.681 1.136 7.5 3.181 2.5-.454 4.545-1.362 6.59-2.5-.909 2.501-2.5 4.319-4.545 5.683Z" fill="#ffffff"/></svg></a></div><div class="t-sociallinks__item t-sociallinks__item_vk"><a href="/" target="_blank" rel="nofollow" style="width: 30px; height: 30px;"><svg class="t-sociallinks__svg" width=30px height=30px viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M50 100c27.614 0 50-22.386 50-50S77.614 0 50 0 0 22.386 0 50s22.386 50 50 50ZM25 34c.406 19.488 10.15 31.2 27.233 31.2h.968V54.05c6.278.625 11.024 5.216 12.93 11.15H75c-2.436-8.87-8.838-13.773-12.836-15.647C66.162 47.242 71.783 41.62 73.126 34h-8.058c-1.749 6.184-6.932 11.805-11.867 12.336V34h-8.057v21.611C40.147 54.362 33.838 48.304 33.556 34H25Z" fill="#ffffff"/></svg></a></div><div class="t-sociallinks__item t-sociallinks__item_telegram"><a href="/" target="_blank" rel="nofollow" style="width: 30px; height: 30px;"><svg class="t-sociallinks__svg" width=30px height=30px viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M50 100c27.614 0 50-22.386 50-50S77.614 0 50 0 0 22.386 0 50s22.386 50 50 50Zm21.977-68.056c.386-4.38-4.24-2.576-4.24-2.576-3.415 1.414-6.937 2.85-10.497 4.302-11.04 4.503-22.444 9.155-32.159 13.734-5.268 1.932-2.184 3.864-2.184 3.864l8.351 2.577c3.855 1.16 5.91-.129 5.91-.129l17.988-12.238c6.424-4.38 4.882-.773 3.34.773l-13.49 12.882c-2.056 1.804-1.028 3.35-.129 4.123 2.55 2.249 8.82 6.364 11.557 8.16.712.467 1.185.778 1.292.858.642.515 4.111 2.834 6.424 2.319 2.313-.516 2.57-3.479 2.57-3.479l3.083-20.226c.462-3.511.993-6.886 1.417-9.582.4-2.546.705-4.485.767-5.362Z" fill="#ffffff"/></svg></a></div><!-- /new soclinks --><script>t_onReady(function () {
+var rec = document.getElementById('rec536373713');
+if (!rec) return;
+var customImageList = rec.querySelectorAll('img.t-sociallinks__customimg');
+Array.prototype.forEach.call(customImageList, function(img) {
+var imgURL = img.getAttribute('src');
+if (imgURL.indexOf('/lib__tildaicon__') !== -1 || imgURL.indexOf('/lib/tildaicon/') !== -1) {
+var xhr = new XMLHttpRequest();
+xhr.open('GET', imgURL);
+xhr.responseType = 'document';
+xhr.onload = function() {
+if (xhr.status >= 200 && xhr.status < 400) {
+var response = xhr.response;
+var svg = response.querySelector('svg');
+svg.style.width = '30px';
+svg.style.height = '30px';
+var figureList = svg.querySelectorAll('*:not(g):not(title):not(desc)');
+for(var j = 0; j < figureList.length; j++) {
+figureList[j].style.fill = '#ffffff';
+}
+img.parentNode.append(svg);
+img.remove();
+} else {
+img.style.visibility = 'visible';
+}
+}
+xhr.onerror = function(error) {
+img.style.visibility = 'visible';
+}
+xhr.send();
+}
+});
+});</script></div></div></div></div><div class="t228__padding40px"></div></div></div><style>@media screen and (max-width: 980px) {
+#rec536373713 .t228 {
+position: static;
+}
+}</style><script>window.addEventListener('resize', t_throttle(function () {
+t_onFuncLoad('t_menu__setBGcolor', function () {
+t_menu__setBGcolor('536373713', '.t228');
+});
+}));
+t_onReady(function () {
+t_onFuncLoad('t_menu__highlightActiveLinks', function () {
+t_menu__highlightActiveLinks('.t228__list_item a');
+});
+t_onFuncLoad('t228__init', function () {
+t228__init('536373713');
+});
+t_onFuncLoad('t_menu__setBGcolor', function () {
+t_menu__setBGcolor('536373713', '.t228');
+});
+t_onFuncLoad('t_menu__createMobileMenu', function () {
+t_menu__createMobileMenu('536373713', '.t228');
+});
+});</script><style>#rec536373713 .t-menu__link-item{
+outline: none;
+}
+/* #rec536373713 .t-menu__link-item:not(:focus-visible){
+outline: none;
+} */
+@supports (overflow:-webkit-marquee) and (justify-content:inherit)
+{
+#rec536373713 .t-menu__link-item,
+#rec536373713 .t-menu__link-item.t-active {
+opacity: 1 !important;
+}
+}</style></div><div id="rec536373714" class="r t-rec" style="background-color:#1a1a1a; " data-animationappear="off" data-record-type="941" data-bg-color="#1a1a1a"><!-- t941 --><div class="t941" ><div class="t941__wrapper t-container" style="height: 100vh;"><div class="t941__content t-col"><div class="t941__textwrapper"><div class="t941__title t-title t-title_sm " field="title" style="color:#ffffff;">Персональный стилист Анна Мень</div><div class="t941__descr t-descr t-descr_sm " field="descr" style="color:#ffffff;font-size:20px;">Формирование стиля и помощь в подборе гардероба для женщин и мужчин</div></div><div class="t941__buttonwrapper t-btnwrapper" ><a href="#form" target="" 
+class="t941__btn t-btn t-btn_md " 
+style="color:#ffffff;background-color:#ed2204;"><span class="t941__btn-title">Связаться</span></a></div></div><div class="t941__cover-wrap"><div class="t941__cover t-bgimg" data-original="https://static.tildacdn.info/tild3131-3136-4634-b362-363166303265/kaboompics_Portrait_.jpg" 
+bgimgfield="img" data-animate-style="zoomin" data-animate-group="yes" 
+style="background-image: url('https://static.tildacdn.info/tild3131-3136-4634-b362-363166303265/-/resizeb/20x/kaboompics_Portrait_.jpg');"
+itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="https://static.tildacdn.info/tild3131-3136-4634-b362-363166303265/kaboompics_Portrait_.jpg"> </div></div></div></div></div><div id="rec536373715" class="r t-rec t-rec_pt_150 t-rec_pb_120" style="padding-top:150px;padding-bottom:120px;background-color:#f5f1f0; " data-animationappear="off" data-record-type="677" data-bg-color="#f5f1f0"><!-- T677 --><div class="t677"><div class="t-container t-container_flex"><div class="t677__col t-col t-col_6 "><div class="t677__row t677__row_3-images"><div class="t677__tile t677__tile_left" itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="https://static.tildacdn.info/tild6534-3730-4537-b234-613564303031/kaboompics_Portrait_.jpg"> <div class="t677__bgimg t677__bgimg_1 t-bgimg" data-original="https://static.tildacdn.info/tild6534-3730-4537-b234-613564303031/kaboompics_Portrait_.jpg"
+style="background-image:url('https://static.tildacdn.info/tild6534-3730-4537-b234-613564303031/-/resizeb/20x/kaboompics_Portrait_.jpg'); box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.0);" 
+></div></div><div class="t677__tile t677__tile_right"><div class="t677__wrapper t677__wrapper_top" itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="https://static.tildacdn.info/tild3866-3631-4363-b735-323862303636/kevin-grieve-p72hWXv.jpg"> <div class="t677__bgimg t677__bgimg_2 t-bgimg" data-original="https://static.tildacdn.info/tild3866-3631-4363-b735-323862303636/kevin-grieve-p72hWXv.jpg"
+style="background-image:url('https://static.tildacdn.info/tild3866-3631-4363-b735-323862303636/-/resizeb/20x/kevin-grieve-p72hWXv.jpg'); box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.0);" 
+></div></div><div class="t677__wrapper t677__wrapper_bottom" itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="https://static.tildacdn.info/tild6434-6133-4366-a632-306433336239/IMG_2121.PNG"> <div class="t677__bgimg t677__bgimg_3 t-bgimg" data-original="https://static.tildacdn.info/tild6434-6133-4366-a632-306433336239/IMG_2121.PNG"
+style="background-image:url('https://static.tildacdn.info/tild6434-6133-4366-a632-306433336239/-/resizeb/20x/IMG_2121.PNG'); box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.0);" 
+></div></div></div></div><div class="t677__bgimg t677__bgimg_3_mobile t-bgimg" data-original="https://static.tildacdn.info/tild6434-6133-4366-a632-306433336239/IMG_2121.PNG" 
+style="background-image:url('https://static.tildacdn.info/tild6434-6133-4366-a632-306433336239/-/resizeb/20x/IMG_2121.PNG'); box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.0);"
+></div> </div><div class="t677__col t-col t-col_5 t-prefix_1 t677__top-indent"><div class="t677__textwrapper t-align_left"><div class="t677__content t-valign_top"><div class="t677__title t-title t-title_xs " field="title" style="">Обо мне</div><div class="t677__descr t-descr t-descr_md " field="descr" style="font-size:18px;"><span style="font-size: 22px;">Я люблю свою работу, для меня одежда — это возможность самовыразиться. Мне нравится помогать своим клиентам подчеркнуть их яркие стороны и почувствовать себя уверенней. Вот несколько фактов о моей деятельности:</span><br /><br /><br /><ul><li>Стилист и имиджмейкер с 2015 г.</li><li>Преподаватель на факультете «Имиджеология» в Британской Школе Дизайна</li><li>Автор мастер-класса «Универсальный гардероб»</li><li>Автор онлайн-курса «Новый стиль за 5 дней»</li><li>Обновила стиль более чем тремстам клиентов</li></ul></div></div></div></div></div></div></div><div id="rec536373716" class="r t-rec t-rec_pt_120 t-rec_pb_135" style="padding-top:120px;padding-bottom:135px; " data-record-type="491" ><!-- t491 --><div class="t491"><div class="t-section__container t-container"><div class="t-col t-col_12"><div class="t-section__topwrapper t-align_center"><div class="t-section__title t-title t-title_xs" field="btitle">Какие проблемы я помогу решить</div> <div class="t-section__descr t-descr t-descr_xl t-margin_auto" field="bdescr">Это самые распространенные сложности, с которыми сталкиваются мои клиенты</div> </div></div></div><ul class="t491__container t-container"><li class="t491__col t-col t-col_3 t-item"><div class="t491__content"><div class="t491__wrapper"><img class="t491__img t-img" 
+src="https://static.tildacdn.info/tild6131-3861-4131-a336-383166386230/circle.svg" 
+imgfield="li_img__1476976310929"
+style="width:20px;" alt="" role="presentation"></div><div class="t491__descr t-descr t-descr_xs" style="font-size:18px;padding-top:10px;" field="li_descr__1476976310929">Ваш шкаф с одеждой переполнен, а надеть все равно нечего</div></div></li><li class="t491__col t-col t-col_3 t-item"><div class="t491__content"><div class="t491__wrapper"><img class="t491__img t-img" 
+src="https://static.tildacdn.info/tild6437-3838-4738-b362-343030653037/circle.svg" 
+imgfield="li_img__1476976330452"
+style="width:20px;" alt="" role="presentation"></div><div class="t491__descr t-descr t-descr_xs" style="font-size:18px;padding-top:10px;" field="li_descr__1476976330452">Необходимость шопинга вызывает у вас стресс и дискомфорт </div></div></li><li class="t491__col t-col t-col_3 t-item"><div class="t491__content"><div class="t491__wrapper"><img class="t491__img t-img" 
+src="https://static.tildacdn.info/tild6264-3930-4532-b462-376462636463/circle.svg" 
+imgfield="li_img__1476976688514"
+style="width:20px;" alt="" role="presentation"></div><div class="t491__descr t-descr t-descr_xs" style="font-size:18px;padding-top:10px;" field="li_descr__1476976688514">Вам трудно самостоятельно подобрать качественный гардероб</div></div></li><li class="t491__col t-col t-col_3 t-item"><div class="t491__content"><div class="t491__wrapper"><img class="t491__img t-img" 
+src="https://static.tildacdn.info/tild3430-3266-4165-a435-333163373337/circle.svg" 
+imgfield="li_img__1476976692541"
+style="width:20px;" alt="" role="presentation"></div><div class="t491__descr t-descr t-descr_xs" style="font-size:18px;padding-top:10px;" field="li_descr__1476976692541">Вы тратитесь на одежду, но все равно не удовлетворены своим гардеробом</div></div></li></ul></div><script>t_onReady(function () {
+t_onFuncLoad('t491_init', function () {
+t491_init('536373716');
+});
+});</script></div><div id="rec536373717" class="r t-rec" style=" " data-record-type="215" ><a name="portfolio" style="font-size:0;"></a></div><div id="rec536373718" class="r t-rec t-rec_pt_135 t-rec_pb_60" style="padding-top:135px;padding-bottom:60px;background-color:#f5f1f0; " data-record-type="795" data-bg-color="#f5f1f0"><!-- T795 --><div class="t795"><div class="t-container t-align_center"><div class="t-col t-col_10 t-prefix_1"><div class="t795__title t-title t-title_xs t-margin_auto" field="title" style="">Мое портфолио</div> <div class="t795__descr t-descr t-descr_xl t-margin_auto" field="descr" style="">Остальные свои работы я могу показать вам при нашем знакомстве и подборе стиля</div> </div></div></div></div><div id="rec536373719" class="r t-rec t-rec_pt_0 t-rec_pb_90" style="padding-top:0px;padding-bottom:90px;background-color:#f5f1f0; " data-animationappear="off" data-record-type="827" data-bg-color="#f5f1f0"><!-- t827--><div class="t827"><div class="t827__container t827__container_padd-column t-container"><div class="t827__grid t827__grid_pt-20 "><div class="t827__grid-sizer" style="width: 400px;"></div><div class="t827__gutter-sizer t827__gutter-sizer_20"></div><div class="t827__grid-item t827__grid-item_mb-20 " 
+style="width: 400px;"
+itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="https://static.tildacdn.info/tild6531-3366-4662-b930-353630386436/chris-murray-YGzEX5y.jpg"><meta itemprop="caption" content="Photo by Jacob"><img class="t827__image t-slds__img t-img" data-original="https://static.tildacdn.info/tild6531-3366-4662-b930-353630386436/chris-murray-YGzEX5y.jpg" 
+imgfield="gi_img__0" 
+src="https://static.tildacdn.info/tild6531-3366-4662-b930-353630386436/-/empty/chris-murray-YGzEX5y.jpg" data-original="https://static.tildacdn.info/tild6531-3366-4662-b930-353630386436/chris-murray-YGzEX5y.jpg"
+title="Photo by Jacob" alt="Photo by Jacob"></div><div class="t827__grid-item t827__grid-item_mb-20 " 
+style="width: 400px;"
+itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="https://static.tildacdn.info/tild3737-3662-4965-a535-613861356130/eli-defaria-oV4PktGc.jpg"><meta itemprop="caption" content="Photo by Mike"><img class="t827__image t-slds__img t-img" data-original="https://static.tildacdn.info/tild3737-3662-4965-a535-613861356130/eli-defaria-oV4PktGc.jpg" 
+imgfield="gi_img__1" 
+src="https://static.tildacdn.info/tild3737-3662-4965-a535-613861356130/-/empty/eli-defaria-oV4PktGc.jpg" data-original="https://static.tildacdn.info/tild3737-3662-4965-a535-613861356130/eli-defaria-oV4PktGc.jpg"
+title="Photo by Mike" alt="Photo by Mike"></div><div class="t827__grid-item t827__grid-item_mb-20 " 
+style="width: 400px;"
+itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="https://static.tildacdn.info/tild6638-6434-4339-b063-333134366362/Screen_Shot_2020-10-.png"><meta itemprop="caption" content="Photo by Jacob"><img class="t827__image t-slds__img t-img" data-original="https://static.tildacdn.info/tild6638-6434-4339-b063-333134366362/Screen_Shot_2020-10-.png" 
+imgfield="gi_img__2" 
+src="https://static.tildacdn.info/tild6638-6434-4339-b063-333134366362/-/empty/Screen_Shot_2020-10-.png" data-original="https://static.tildacdn.info/tild6638-6434-4339-b063-333134366362/Screen_Shot_2020-10-.png"
+title="Photo by Jacob" alt="Photo by Jacob"></div><div class="t827__grid-item t827__grid-item_mb-20 " 
+style="width: 400px;"
+itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="https://static.tildacdn.info/tild3430-6131-4666-b331-323339663866/tamara-bellis-hfoMyO.jpg"><meta itemprop="caption" content="Photo by Marion"><img class="t827__image t-slds__img t-img" data-original="https://static.tildacdn.info/tild3430-6131-4666-b331-323339663866/tamara-bellis-hfoMyO.jpg" 
+imgfield="gi_img__3" 
+src="https://static.tildacdn.info/tild3430-6131-4666-b331-323339663866/-/empty/tamara-bellis-hfoMyO.jpg" data-original="https://static.tildacdn.info/tild3430-6131-4666-b331-323339663866/tamara-bellis-hfoMyO.jpg"
+title="Photo by Marion" alt="Photo by Marion"></div><div class="t827__grid-item t827__grid-item_mb-20 " 
+style="width: 400px;"
+itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="https://static.tildacdn.info/tild3738-3636-4539-b738-303038663233/tyler-nix-6UEyVsw_1l.jpg"><meta itemprop="caption" content="Photo by Jacob"><img class="t827__image t-slds__img t-img" data-original="https://static.tildacdn.info/tild3738-3636-4539-b738-303038663233/tyler-nix-6UEyVsw_1l.jpg" 
+imgfield="gi_img__4" 
+src="https://static.tildacdn.info/tild3738-3636-4539-b738-303038663233/-/empty/tyler-nix-6UEyVsw_1l.jpg" data-original="https://static.tildacdn.info/tild3738-3636-4539-b738-303038663233/tyler-nix-6UEyVsw_1l.jpg"
+title="Photo by Jacob" alt="Photo by Jacob"></div><div class="t827__grid-item t827__grid-item_mb-20 " 
+style="width: 400px;"
+itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="https://static.tildacdn.info/tild6436-3261-4632-b935-346533353035/artem-gavrysh-ygAujE.png"><meta itemprop="caption" content="Photo by Leio"><img class="t827__image t-slds__img t-img" data-original="https://static.tildacdn.info/tild6436-3261-4632-b935-346533353035/artem-gavrysh-ygAujE.png" 
+imgfield="gi_img__5" 
+src="https://static.tildacdn.info/tild6436-3261-4632-b935-346533353035/-/empty/artem-gavrysh-ygAujE.png" data-original="https://static.tildacdn.info/tild6436-3261-4632-b935-346533353035/artem-gavrysh-ygAujE.png"
+title="Photo by Leio" alt="Photo by Leio"></div></div></div></div><script type="text/javascript">t_onReady(function() {
+t_onFuncLoad('t827_init', function() {
+t827_init('536373719');
+});
+});</script></div><div id="rec536373720" class="r t-rec t-rec_pt_0 t-rec_pb_60" style="padding-top:0px;padding-bottom:60px;background-color:#f5f1f0; " data-record-type="127" data-bg-color="#f5f1f0"><!-- T119 --><div class="t119"><div class="t-container t-align_center"><div class="t-col t-col_6 t-prefix_3"><div class="t119__preface t-descr" style="color:#000000;font-size:22px;font-weight:400;opacity:1;" field="text">Чтобы посмотреть больше моих работ, заходите и подписывайтесь на мой Instagram</div></div></div></div></div><div id="rec536373721" class="r t-rec t-rec_pt_0 t-rec_pb_120" style="padding-top:0px;padding-bottom:120px;background-color:#f5f1f0; " data-record-type="191" data-bg-color="#f5f1f0"><!-- T142 --><div class="t142"><div class="t-container_100"><div class="t142__wrapone"><div class="t142__wraptwo"><a href="https://www.instagram.com/tildapublishing/" target="" class=""><div class="t-btn t142__submit t142__submit_size_sm" style="color:#ed2204;border:2px solid #ed2204;" ><span class="t142__text">Мой Instagram</span></div></a></div></div></div></div><script>t_onReady(function() {
+t_onFuncLoad('t142_checkSize', function(){t142_checkSize('536373721');});
+});
+window.addEventListener('load', function(){
+t_onFuncLoad('t142_checkSize', function(){t142_checkSize('536373721');});
+});</script></div><div id="rec536373722" class="r t-rec t-rec_pt_120 t-rec_pb_135" style="padding-top:120px;padding-bottom:135px; " data-record-type="550" ><!-- t550 --><div class="t550"><div class="t-section__container t-container"><div class="t-col t-col_12"><div class="t-section__topwrapper t-align_center"><div class="t-section__title t-title t-title_xs" field="btitle">Как я работаю</div> </div></div></div><div class="t-container"><div class="t550__col t-col t-col_8 t-prefix_2"><div class="t550__numberwrapper t-cell t-valign_top" style="padding-bottom:80px;"><div class="t550__number"><div class="t550__circle" style=" border-width: 2px; background: #ed2204;"></div><div class="t550__digit t-name t-name_md" style="">1</div></div><div class="t550__line" style="width: 2px;background: #e8e8e8;"></div></div><div class="t550__textwrapper t-cell t-valign_top" style="padding-bottom:80px;"><div class="t550__title t-name t-name_lg" field="li_title__1479137044697" style="font-size:22px;">Личная консультация</div> <div class="t550__descr t-text t-text_xs" field="li_descr__1479137044697" style="font-size:18px;">Знакомство, глубокое интервью, анализ вашего гардероба и стиля, подбор типажа. По итогу анализа я составлю лист покупок и дам вам рекомендации по дальнейшему подбору фасонов, деталей и предметов, подходящих вашему типажу.</div> </div></div><div class="t550__col t-col t-col_8 t-prefix_2"><div class="t550__numberwrapper t-cell t-valign_top" style="padding-bottom:80px;"><div class="t550__number"><div class="t550__circle" style=" border-width: 2px; background: #ed2204;"></div><div class="t550__digit t-name t-name_md" style="">2</div></div><div class="t550__line" style="width: 2px;background: #e8e8e8;"></div></div><div class="t550__textwrapper t-cell t-valign_top" style="padding-bottom:80px;"><div class="t550__title t-name t-name_lg" field="li_title__1479137356907" style="font-size:22px;">Шопинг</div> <div class="t550__descr t-text t-text_xs" field="li_descr__1479137356907" style="font-size:18px;">Примерка и покупка запланированного гардероба по построенному маршруту. Исходя из намеченных целей я подберу для вас 2-3 полных образа. Дополнительно я составлю для вас чек-лист для дальнейших самостоятельных покупок.</div> </div></div><div class="t550__col t-col t-col_8 t-prefix_2"><div class="t550__numberwrapper t-cell t-valign_top" style="padding-bottom:80px;"><div class="t550__number"><div class="t550__circle" style=" border-width: 2px; background: #ed2204;"></div><div class="t550__digit t-name t-name_md" style="">3</div></div><div class="t550__line" style="width: 2px;background: #e8e8e8;"></div></div><div class="t550__textwrapper t-cell t-valign_top" style="padding-bottom:80px;"><div class="t550__title t-name t-name_lg" field="li_title__1479137790652" style="font-size:22px;">Поддержка</div> <div class="t550__descr t-text t-text_xs" field="li_descr__1479137790652" style="font-size:18px;">После завершения работы я составлю вам мудборд для самостоятельного шопинга, а так же обеспечу поддержку и буду на связи по любому вопросу, касающемуся вашего гардероба и стиля.</div> </div></div></div></div></div><div id="rec536373723" class="r t-rec" style=" " data-animationappear="off" data-record-type="906" ><!-- t906 --><!-- cover --><div class="t-cover"
+id="recorddiv536373723"
+bgimgfield="img"
+style="height:550px; background-image:url('https://static.tildacdn.info/tild3233-3163-4331-b062-656662653061/-/resize/20x/anna-utochkina-qLoOa.jpg');"
+><div class="t-cover__carrier" id="coverCarry536373723"data-content-cover-id="536373723"data-content-cover-bg="https://static.tildacdn.info/tild3233-3163-4331-b062-656662653061/anna-utochkina-qLoOa.jpg"data-display-changed="true"data-content-cover-height="550px"data-content-cover-parallax=""style="height:550px;background-attachment:scroll; background-position:center bottom;"itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="https://static.tildacdn.info/tild3233-3163-4331-b062-656662653061/anna-utochkina-qLoOa.jpg"></div><div class="t-cover__filter" style="height:550px;background-image: -moz-linear-gradient(top, rgba(0,0,0,0.0), rgba(0,0,0,0.70));background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.0), rgba(0,0,0,0.70));background-image: -o-linear-gradient(top, rgba(0,0,0,0.0), rgba(0,0,0,0.70));background-image: -ms-linear-gradient(top, rgba(0,0,0,0.0), rgba(0,0,0,0.70));background-image: linear-gradient(top, rgba(0,0,0,0.0), rgba(0,0,0,0.70));filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fe000000', endColorstr='#4c000000');"></div><div class="t-container"><div class="t906 t-align_center"><div class="t-cover__wrapper t-valign_bottom" style="height:550px"><div class="t906__wrapper"><div class="t906__col t-col_9 " data-hook-content="covercontent"><div class="t906__title t-title t-title_sm" style="" field="title"><div style="text-align: left;" data-customstyle="yes">Как проходит шопинг со мной.<br />Разбор на основе одного кейса </div></div></div><div class="t906__col t-col_100 t-prefix_3"><button 
+type="button" 
+class="t906__play-icon t-animate" data-animate-style="zoomin" data-animate-group="yes" data-animate-order="3" data-animate-delay="0.3" 
+onclick="javascript:t906showvideo('536373723');" 
+aria-label="Воспроизвести видео"><svg role="presentation" width="100" height="100" viewBox="0 0 130 130" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M65 130c35.899 0 65-29.101 65-65 0-35.898-29.101-65-65-65C29.102 0 0 29.102 0 65c0 35.899 29.102 65 65 65zm23.991-65.509L52.901 42.6v43.784l36.09-21.892z" fill="#ffffff"/><path d="M52.054 41.446l37.852 22.96-37.852 22.96v-45.92z" fill="#ed2204"/></svg></button></div></div></div><div class="t906__video-container t906__hidden" data-content-popup-video-url-youtube="BOW6MD-alMg"><div class="t906__video-carier t906__youtube"></div><a class="t906__video-bg" href="javascript:t906hidevideo('536373723');" style="background:#000000; opacity:0.80;"></a></div></div></div></div></div><div id="rec536373724" class="r t-rec" style=" " data-record-type="215" ><a name="services" style="font-size:0;"></a></div><div id="rec536373725" class="r t-rec t-rec_pt_120 t-rec_pb_135" style="padding-top:120px;padding-bottom:135px;background-color:#f5f1f0; " data-animationappear="off" data-record-type="599" data-bg-color="#f5f1f0"><!-- T599 --><div class="t599"><div class="t-section__container t-container"><div class="t-col t-col_12"><div class="t-section__topwrapper t-align_center"><div class="t-section__title t-title t-title_xs" field="btitle">Мои услуги</div> <div class="t-section__descr t-descr t-descr_xl t-margin_auto" field="bdescr">Все услуги можно модифицировать или скомбинировать по вашим пожеланиям</div> </div></div></div><div class="t-container t599__withfeatured"><div class="t599__col t-col t-col_4 t-align_center "><div class="t599__content" style="border: 1px solid #ffffff; background-color: #ffffff; border-radius: 30px;"><div class="t599__title t-name t-name_lg" field="title" style="">Экспресс Шопинг</div> <div class="t599__price t-title t-title_xs" field="price" style="">$100</div> <div class="t599__descr t-descr t-descr_xs" field="descr" style=""><ul><li>Онлайн-консультация и постановка задач</li><li>2 часа шопинга в любом ТЦ города</li><li>Онлайн-поддержка 1 месяц</li></ul></div> </div></div><div class="t599__col t-col t-col_4 t-align_center t599__featured"><div class="t599__content" style="border: 1px solid #ffffff; background-color: #ffffff; border-radius: 30px;"><div class="t599__title t-name t-name_lg" field="title2" style="">Шопинг</div> <div class="t599__price t-title t-title_xs" field="price2" style="">$250</div> <div class="t599__descr t-descr t-descr_xs" field="descr2" style=""><ul><li>Личная консультация, анализ гардероба, постановка задач и целей</li><li>Один день шопинга со стилистом</li></ul>Онлайн-поддержка 2 месяца</div> </div></div><div class="t599__col t-col t-col_4 t-align_center "><div class="t599__content" style="border: 1px solid #ffffff; background-color: #ffffff; border-radius: 30px;"><div class="t599__title t-name t-name_lg" field="title3" style="">Онлайн шопинг</div> <div class="t599__price t-title t-title_xs" field="price3" style="">$50</div> <div class="t599__descr t-descr t-descr_xs" field="descr3" style=""><ul><li>Онлайн-консультация и постановка задач</li><li>Подбор вещей в онлайн-магазинах</li><li>Онлайн-поддержка 2 недели</li></ul></div> </div></div></div></div><style>#rec536373725 .t599__featured .t599__content {
+box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10) !important; }</style><script>t_onReady(function () {
+setTimeout(function () {
+t_onFuncLoad('t599_init', function () {
+t599_init('536373725');
+});
+}, 500);
+window.addEventListener(
+'resize',
+t_throttle(function () {
+t_onFuncLoad('t599_init', function () {
+t599_init('536373725');
+});
+}, 250)
+);
+var rec = document.getElementById('rec536373725');
+if (rec) {
+if (typeof jQuery !== 'undefined') {
+$('.t599').on('displayChanged', function () {
+t599_init('536373725');
+});
+} else {
+var wrapperBlock = rec.querySelector('.t599');
+if (wrapperBlock) {
+wrapperBlock.addEventListener('displayChanged', function () {
+t_onFuncLoad('t599_init', function () {
+t599_init('536373725');
+});
+});
+}
+}
+window.onload = function () {
+t_onFuncLoad('t599_init', function () {
+t599_init('536373725');
+});
+};
+}
+});</script></div><div id="rec536373726" class="r t-rec" style=" " data-record-type="215" ><a name="form" style="font-size:0;"></a></div><div id="rec536373727" class="r t-rec" style=" " data-animationappear="off" data-record-type="698" ><!-- t698 --><!-- cover --><div class="t-cover"
+id="recorddiv536373727"
+bgimgfield="img"
+style="height:105vh; background-image:url('https://static.tildacdn.info/tild3262-3462-4833-b862-623435666562/-/resize/20x/junko-nakase-Q-72wa9.jpg');"
+><div class="t-cover__carrier" id="coverCarry536373727"data-content-cover-id="536373727"data-content-cover-bg="https://static.tildacdn.info/tild3262-3462-4833-b862-623435666562/junko-nakase-Q-72wa9.jpg"data-display-changed="true"data-content-cover-height="105vh"data-content-cover-parallax="dynamic"style="height:105vh;background-attachment:scroll; "itemscope itemtype="http://schema.org/ImageObject"><meta itemprop="image" content="https://static.tildacdn.info/tild3262-3462-4833-b862-623435666562/junko-nakase-Q-72wa9.jpg"></div><div class="t-cover__filter" style="height:105vh;background-color:#f0e9e7;filter: alpha(opacity:90); KHTMLOpacity: 0.90; MozOpacity: 0.90; opacity: 0.90;"></div><div class="t698"><div class="t-container "><div class="t-width t-width_8 t698__mainblock"><div class="t-cover__wrapper t-valign_middle" style="height:105vh;"><div class="t698__mainwrapper" data-hook-content="covercontent"><div class="t698__title t-title t-title_xs" style="color:#000000;" field="title">Свяжитесь со мной</div> <div class="t698__descr t-descr t-descr_md" style="color:#000000;" field="descr">Расскажите о своих пожеланиях, и я с вами свяжусь в течение двух часов для назначения встречи</div> <div><form id="form536373727" name='form536373727' role="form" action='' method='POST' data-formactiontype="0" data-inputbox=".t-input-group" class="t-form js-form-proccess t-form_inputs-total_3 " data-success-callback="t698_onSuccess" ><!-- NO ONE SERVICES CONNECTED --> <div class="js-successbox t-form__successbox t-text t-text_md" style="display:none;"></div><div class="t-form__inputsbox"><div class="t-input-group t-input-group_nm" data-input-lid="1495646567135"><div class="t-input-block"><input type="text" autocomplete="name" name="Name" class="t-input js-tilda-rule " value="" placeholder="Имя" data-tilda-rule="name" style="color:#000000; background-color:#ffffff; border-radius: 30px; -moz-border-radius: 30px; -webkit-border-radius: 30px;"><div class="t-input-error"></div></div></div><div class="t-input-group t-input-group_ph" data-input-lid="1495646545048"><div class="t-input-block"><input type="tel" autocomplete="tel" name="Phone" data-phonemask-init="no" data-phonemask-id="536373727" data-phonemask-lid="1495646545048" data-phonemask-maskcountry="RU" class="t-input js-phonemask-input js-tilda-rule " value="" placeholder="+1(999)999-9999" style="color:#000000; background-color:#ffffff; border-radius: 30px; -moz-border-radius: 30px; -webkit-border-radius: 30px;"><script type="text/javascript">if (! document.getElementById('t-phonemask-script')) {
+(function (d, w, o) {
+var n=d.getElementsByTagName(o)[0],s=d.createElement(o),f=function(){n.parentNode.insertBefore(s,n);};
+s.type = "text/javascript";
+s.async = true;
+s.id = 't-phonemask-script';
+s.src="https://static.tildacdn.info/js/tilda-phone-mask-1.1.min.js";
+if (w.opera=="[object Opera]") {d.addEventListener("DOMContentLoaded", f, false);} else { f(); }
+})(document, window, 'script');
+} else {
+t_onReady(function () {
+t_onFuncLoad('t_form_phonemask_load', function () {
+var phoneMasks = document.querySelectorAll('#rec536373727 [data-phonemask-lid="1495646545048"]');
+t_form_phonemask_load(phoneMasks);
+});
+});
+}</script><div class="t-input-error"></div></div></div><div class="t-input-group t-input-group_ta" data-input-lid="1601997944773"><div class="t-input-block"><textarea name="Textarea" class="t-input js-tilda-rule " placeholder="Ваш комментарий" style="color:#000000; background-color:#ffffff; border-radius: 30px; -moz-border-radius: 30px; -webkit-border-radius: 30px;height:102px;" rows="3"></textarea><div class="t-input-error"></div></div></div><div class="t-form__errorbox-middle"><div class="js-errorbox-all t-form__errorbox-wrapper" style="display:none;"><div class="t-form__errorbox-text t-text t-text_md"><p class="t-form__errorbox-item js-rule-error js-rule-error-all"></p><p class="t-form__errorbox-item js-rule-error js-rule-error-req"></p><p class="t-form__errorbox-item js-rule-error js-rule-error-email"></p><p class="t-form__errorbox-item js-rule-error js-rule-error-name"></p><p class="t-form__errorbox-item js-rule-error js-rule-error-phone"></p><p class="t-form__errorbox-item js-rule-error js-rule-error-minlength"></p><p class="t-form__errorbox-item js-rule-error js-rule-error-string"></p></div></div> </div><div class="t-form__submit"><button type="submit" class="t-submit" style="color:#ffffff;background-color:#ed2204;" >Отправить</button></div></div><div class="t-form__errorbox-bottom"><div class="js-errorbox-all t-form__errorbox-wrapper" style="display:none;"><div class="t-form__errorbox-text t-text t-text_md"><p class="t-form__errorbox-item js-rule-error js-rule-error-all"></p><p class="t-form__errorbox-item js-rule-error js-rule-error-req"></p><p class="t-form__errorbox-item js-rule-error js-rule-error-email"></p><p class="t-form__errorbox-item js-rule-error js-rule-error-name"></p><p class="t-form__errorbox-item js-rule-error js-rule-error-phone"></p><p class="t-form__errorbox-item js-rule-error js-rule-error-minlength"></p><p class="t-form__errorbox-item js-rule-error js-rule-error-string"></p></div></div> </div></form><style>#rec536373727 input::-webkit-input-placeholder {color:#000000; opacity: 0.5;}
+#rec536373727 input::-moz-placeholder {color:#000000; opacity: 0.5;}
+#rec536373727 input:-moz-placeholder {color:#000000; opacity: 0.5;}
+#rec536373727 input:-ms-input-placeholder {color:#000000; opacity: 0.5;}
+#rec536373727 textarea::-webkit-input-placeholder {color:#000000; opacity: 0.5;}
+#rec536373727 textarea::-moz-placeholder {color:#000000; opacity: 0.5;}
+#rec536373727 textarea:-moz-placeholder {color:#000000; opacity: 0.5;}
+#rec536373727 textarea:-ms-input-placeholder {color:#000000; opacity: 0.5;}</style></div><div class="t698__form-bottom-text t-text t-text_xs" field="text"><span style="color: rgb(0, 0, 0);">Нажимая на кнопку, вы соглашаетесь c нашей политикой конфиденциальности</span></div> </div></div></div></div></div></div><script>if (typeof jQuery !== 'undefined') {
+$('#rec536373727').find('.js-form-proccess').on('tildaform:aftererror', function(e){
+e.preventDefault();
+t_onFuncLoad('t698_fixcontentheight', function(){t698_fixcontentheight('536373727');});
+});
+$('.t698').bind('displayChanged',function(){
+t_onFuncLoad('t698_fixcontentheight', function(){t698_fixcontentheight('536373727');});
+}); 
+} else {
+var formBlock = document.querySelector('#rec536373727 .js-form-proccess');
+if (formBlock) {
+formBlock.addEventListener('tildaform:aftererror', function(e){
+e.preventDefault();
+t_onFuncLoad('t698_fixcontentheight', function(){t698_fixcontentheight('536373727');});
+});
+}
+var wrapperBlock = document.querySelector('#rec536373727 .t698');
+if (wrapperBlock) {
+wrapperBlock.addEventListener('displayChanged',function(){
+t_onFuncLoad('t698_fixcontentheight', function(){t698_fixcontentheight('536373727');});
+});
+}
+}
+window.addEventListener('load', function() {
+setTimeout(function() {
+t_onFuncLoad('t_cover__setRecalculatedHeight', function () {
+var rec = document.getElementById('rec536373727');
+if (rec) {
+var content = rec.querySelector('div[data-hook-content]');
+var contentHeight = content ? t_cover__getPureHeight(content) : 0;
+t_cover__setRecalculatedHeight(rec, contentHeight);
+}
+});
+}, 500);
+});</script><style>#rec536373727 .t-input__vis-ph {
+color:#000000;
+}</style><!--[if IE 8 ]><style>.t-input-block .t-input:focus ~ .t-input__vis-ph, .t-input_has-content + .t-input__vis-ph {
+top: 10px;
+font-size: 12px;
+}</style><![endif]--><script>function t_animateInputs(recid) {
+var rec = document.getElementById('rec' + recid);
+if (!rec) return;
+var inputsGroup = rec.querySelectorAll(
+'.t-input-group:not(.t-input-group_da):not(.t-input-group_uw):not(.t-input-group_ri):not(.t-input-group_cb):not(.t-input-group_rg) .t-input-block, .t-datepicker__wrapper'
+);
+Array.prototype.forEach.call(inputsGroup, function (inputBlock) {
+if((inputBlock.closest('.t-input-group_ph') && !inputBlock.closest('.t-input-group_ph').hasAttribute('data-init-mask')) || !inputBlock.parentElement.classList.contains('t-input-group_ph')) {
+inputBlock.style.position = 'relative';
+inputBlock.style.overflow = 'hidden';
+}
+});
+var inputsPhone = rec.querySelectorAll('.t-input-group.t-input-group_ph');
+Array.prototype.forEach.call(inputsPhone, function (inputGroup) {
+if(inputGroup.hasAttribute('data-init-mask')) {
+inputGroup.style.position = 'relative';
+}
+});
+var inputs = rec.querySelectorAll('.t-input:not(.t-inputquantity):not(.t-input-phonemask__wrap):not(.t-input-phonemask)');
+Array.prototype.forEach.call(inputs, function (input) {
+input.classList.add('t-input_pvis');
+var inputPlaceholder = input.getAttribute('placeholder');
+if (inputPlaceholder) {
+input.insertAdjacentHTML('afterend', '<div class="t-input__vis-ph">' + inputPlaceholder + '</div>');
+}
+input.setAttribute('placeholder', '');
+input.addEventListener('blur', function () {
+var inputValue = input.value;
+if (inputValue) {
+input.classList.add('t-input_has-content');
+} else {
+input.classList.remove('t-input_has-content');
+}
+});
+});
+if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+var textareas = rec.querySelectorAll('textarea:not(.t-input_bbonly)');
+Array.prototype.forEach.call(textareas, function (textarea) {
+textarea.style.paddingLeft = '17px';
+});
+var textareasBBonly = rec.querySelectorAll('textarea.t-input_bbonly');
+Array.prototype.forEach.call(textareasBBonly, function (textarea) {
+textarea.style.textIndent = '-3px';
+});
+}
+}
+t_onReady(function () {
+t_onFuncLoad('t_animateInputs', function () {
+t_animateInputs('536373727');
+});
+});</script></div><div id="rec536373728" class="r t-rec" style=" " data-record-type="215" ><a name="blog" style="font-size:0;"></a></div><div id="rec536373729" class="r t-rec t-rec_pt_135 t-rec_pb_45" style="padding-top:135px;padding-bottom:45px; " data-animationappear="off" data-record-type="829" ><!-- t829 --><div class="t829"><div class="t-section__container t-container"><div class="t-col t-col_12"><div class="t-section__topwrapper t-align_center"><div class="t-section__title t-title t-title_xs" field="btitle">Блог</div> <div class="t-section__descr t-descr t-descr_xl t-margin_auto" field="bdescr">Пишу о моде, гардеробе, создании своего уникального стиля и развитии вкуса</div> </div></div></div><div class="t829__container t829__container_padd-column t-container"><div class="t829__grid "><div class="t829__grid-sizer" style="width: 400px;"></div><div class="t829__gutter-sizer t829__gutter-sizer_40"></div><div class="t-align_left t-item t829__grid-item t829__grid-item_mb-40 t829__grid-item_flex_padd-40 t829__grid-item_first-flex_padd-12 " style="width: 400px;" ><div class="t829__content-wrapper" ><div class="t829__content"><div class="t829__imgwrapper"><img src="https://static.tildacdn.info/tild3762-6436-4466-b061-636232303364/-/empty/flaunter-LI_8-X9cei0.jpg" data-original="https://static.tildacdn.info/tild3762-6436-4466-b061-636232303364/flaunter-LI_8-X9cei0.jpg" 
+class="t829__img t-img js-product-img" 
+imgfield="li_img__1521103691910"
+alt="" role="presentation" /></div><div class="t829__textwrapper "><div class="t829__title t-name t-name_md" field="li_title__1521103691910" style="" >Как к нам приходят тренды</div><div class="t829__descr t-descr t-descr_xxs" field="li_descr__1521103691910" style="" >И как их правильно считывать и использовать</div></div></div><div class="t829__btnwrapper "><a href="" class="t829__btn t829__btn t-btn t-btn_xs" style="color:#ed2204;border:2px solid #ed2204;"><table style="width:100%; height:100%;"><tr><td>Читать</td></tr></table></a></div></div></div><div class="t-align_left t-item t829__grid-item t829__grid-item_mb-40 t829__grid-item_flex_padd-40 t829__grid-item_first-flex_padd-12 " style="width: 400px;" ><div class="t829__content-wrapper" ><div class="t829__content"><div class="t829__imgwrapper"><img src="https://static.tildacdn.info/tild3337-3565-4133-b134-343835346665/-/empty/alexandru-acea-T5jXj.jpg" data-original="https://static.tildacdn.info/tild3337-3565-4133-b134-343835346665/alexandru-acea-T5jXj.jpg" 
+class="t829__img t-img js-product-img" 
+imgfield="li_img__1520419830673"
+alt="" role="presentation" /></div><div class="t829__textwrapper "><div class="t829__title t-name t-name_md" field="li_title__1520419830673" style="" >Оптимизация пространства</div><div class="t829__descr t-descr t-descr_xxs" field="li_descr__1520419830673" style="" >Как удобно и компактно организовать свой гардероб</div></div></div><div class="t829__btnwrapper "><a href="" class="t829__btn t829__btn t-btn t-btn_xs" style="color:#ed2204;border:2px solid #ed2204;"><table style="width:100%; height:100%;"><tr><td>Читать</td></tr></table></a></div></div></div><div class="t-align_left t-item t829__grid-item t829__grid-item_mb-40 t829__grid-item_flex_padd-40 t829__grid-item_first-flex_padd-12 " style="width: 400px;" ><div class="t829__content-wrapper" ><div class="t829__content"><div class="t829__imgwrapper"><img src="https://static.tildacdn.info/tild6238-3863-4836-a266-306362313032/-/empty/charisse-kenion-o_g8.jpg" data-original="https://static.tildacdn.info/tild6238-3863-4836-a266-306362313032/charisse-kenion-o_g8.jpg" 
+class="t829__img t-img js-product-img" 
+imgfield="li_img__1520419895308"
+alt="" role="presentation" /></div><div class="t829__textwrapper "><div class="t829__title t-name t-name_md" field="li_title__1520419895308" style="" >Как развить вкус</div><div class="t829__descr t-descr t-descr_xxs" field="li_descr__1520419895308" style="" >Инструкция по самостоятельному развитию стиля</div></div></div><div class="t829__btnwrapper "><a href="" class="t829__btn t829__btn t-btn t-btn_xs" style="color:#ed2204;border:2px solid #ed2204;"><table style="width:100%; height:100%;"><tr><td>Читать</td></tr></table></a></div></div></div></div></div></div><script>t_onReady(function () {
+t_onFuncLoad('t829_init', function () {
+t829_init('536373729');
+});
+});</script></div><div id="rec536373730" class="r t-rec t-rec_pt_135 t-rec_pb_135" style="padding-top:135px;padding-bottom:135px;background-color:#1a1a1a; " data-record-type="574" data-bg-color="#1a1a1a"><!-- t574--><div class="t574"><div class="t-container"><div class="t-col t-col_6 t-prefix_3 t-align_center"> <div class="t574__title t-title t-title_xs t574__bottom-margin_lg" style="color:#ffffff;" field="title">Контакты</div><div class="t574__text t-text t-descr_xl t574__bottom-margin_lg" style="color:#ffffff;" field="text">Phone: +1 123 456 78 90<br />E-mail: hello@company.com</div><div class="t574__text_grey t-text t-text_sm" style="color:#ffffff;" field="text2">Следите за мною в соцсетях и в моем <br />канале Телеграм</div><div class="t-sociallinks"><div class="t-sociallinks__wrapper"><!-- new soclinks --><div class="t-sociallinks__item t-sociallinks__item_twitter"><a href="/" target="_blank" rel="nofollow" style="width: 30px; height: 30px;"><svg class="t-sociallinks__svg" width=30px height=30px viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M50 100c27.614 0 50-22.386 50-50S77.614 0 50 0 0 22.386 0 50s22.386 50 50 50Zm19.091-63.636c2.046-.227 4.09-.682 5.909-1.591-1.364 2.045-2.954 3.863-5.228 5v1.364c0 13.636-10.227 29.09-29.09 29.09-5.909 0-11.137-1.59-15.682-4.545.909.227 1.59.227 2.5.227 4.773 0 9.318-1.59 12.727-4.318-4.545 0-8.181-2.955-9.545-7.046.455.227 1.137.227 1.818.227.907 0 1.814-.226 2.72-.453l.008-.002c-4.772-.909-8.182-5-8.182-10v-.227a8.196 8.196 0 0 0 4.546 1.364c-2.727-1.819-4.546-4.773-4.546-8.41 0-2.045.455-3.636 1.364-5.226 5.227 6.136 12.727 10.227 21.136 10.682-.227-.682-.227-1.364-.227-2.273A10.184 10.184 0 0 1 59.546 30c2.954 0 5.681 1.136 7.5 3.181 2.5-.454 4.545-1.362 6.59-2.5-.909 2.501-2.5 4.319-4.545 5.683Z" fill="#ed2204"/></svg></a></div><div class="t-sociallinks__item t-sociallinks__item_vk"><a href="/" target="_blank" rel="nofollow" style="width: 30px; height: 30px;"><svg class="t-sociallinks__svg" width=30px height=30px viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M50 100c27.614 0 50-22.386 50-50S77.614 0 50 0 0 22.386 0 50s22.386 50 50 50ZM25 34c.406 19.488 10.15 31.2 27.233 31.2h.968V54.05c6.278.625 11.024 5.216 12.93 11.15H75c-2.436-8.87-8.838-13.773-12.836-15.647C66.162 47.242 71.783 41.62 73.126 34h-8.058c-1.749 6.184-6.932 11.805-11.867 12.336V34h-8.057v21.611C40.147 54.362 33.838 48.304 33.556 34H25Z" fill="#ed2204"/></svg></a></div><div class="t-sociallinks__item t-sociallinks__item_telegram"><a href="/" target="_blank" rel="nofollow" style="width: 30px; height: 30px;"><svg class="t-sociallinks__svg" width=30px height=30px viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M50 100c27.614 0 50-22.386 50-50S77.614 0 50 0 0 22.386 0 50s22.386 50 50 50Zm21.977-68.056c.386-4.38-4.24-2.576-4.24-2.576-3.415 1.414-6.937 2.85-10.497 4.302-11.04 4.503-22.444 9.155-32.159 13.734-5.268 1.932-2.184 3.864-2.184 3.864l8.351 2.577c3.855 1.16 5.91-.129 5.91-.129l17.988-12.238c6.424-4.38 4.882-.773 3.34.773l-13.49 12.882c-2.056 1.804-1.028 3.35-.129 4.123 2.55 2.249 8.82 6.364 11.557 8.16.712.467 1.185.778 1.292.858.642.515 4.111 2.834 6.424 2.319 2.313-.516 2.57-3.479 2.57-3.479l3.083-20.226c.462-3.511.993-6.886 1.417-9.582.4-2.546.705-4.485.767-5.362Z" fill="#ed2204"/></svg></a></div><!-- /new soclinks --><script>t_onReady(function () {
+var rec = document.getElementById('rec536373730');
+if (!rec) return;
+var customImageList = rec.querySelectorAll('img.t-sociallinks__customimg');
+Array.prototype.forEach.call(customImageList, function(img) {
+var imgURL = img.getAttribute('src');
+if (imgURL.indexOf('/lib__tildaicon__') !== -1 || imgURL.indexOf('/lib/tildaicon/') !== -1) {
+var xhr = new XMLHttpRequest();
+xhr.open('GET', imgURL);
+xhr.responseType = 'document';
+xhr.onload = function() {
+if (xhr.status >= 200 && xhr.status < 400) {
+var response = xhr.response;
+var svg = response.querySelector('svg');
+svg.style.width = '30px';
+svg.style.height = '30px';
+var figureList = svg.querySelectorAll('*:not(g):not(title):not(desc)');
+for(var j = 0; j < figureList.length; j++) {
+figureList[j].style.fill = '#ed2204';
+}
+img.parentNode.append(svg);
+img.remove();
+} else {
+img.style.visibility = 'visible';
+}
+}
+xhr.onerror = function(error) {
+img.style.visibility = 'visible';
+}
+xhr.send();
+}
+});
+});</script></div></div></div></div></div></div></div><!--/allrecords--><!-- Tilda copyright. Don't remove this line --><div class="t-tildalabel t-tildalabel-free" id="tildacopy" data-tilda-sign="6634346#33182836"><div class="t-tildalabel-free__main"><a href="https://tilda.cc/?upm=6634346" target="_blank" style="padding-bottom:12px; display: block;"><img style="width:40px;" src="https://static.tildacdn.info/img/tildacopy.png" fetchpriority="low"></a><div style="padding-bottom: 15px;">This site was made on <a href="https://tilda.cc/?upm=6634346" target="_blank" style="text-decoration: none; color:inherit;">Tilda &mdash; a website builder</a> that helps to&nbsp;create a&nbsp;website without any code</div><a href="https://tilda.cc/registration/" target="_blank" style="display: inline-block; padding: 10px 20px; font-size: 13px; border-radius: 50px; background-color: #fff; color:#000; text-decoration: none;">Create a website</a></div><div class="t-tildalabel-free__links-wr"><a class="t-tildalabel-free__txt-link" href="https://help.tilda.cc/white-label" target="_blank">How to remove this block?</a><a class="t-tildalabel-free__txt-link" href="https://tilda.cc/?upm=6634346" target="_blank">About platform</a><a class="t-tildalabel-free__txt-link" href="https://tilda.cc/abuse/" target="_blank">Submit a complaint</a></div></div><!-- Stat --><script type="text/javascript">if (! window.mainTracker) { window.mainTracker = 'tilda'; }
+window.tildastatcookie='no'; 
+setTimeout(function(){ (function (d, w, k, o, g) { var n=d.getElementsByTagName(o)[0],s=d.createElement(o),f=function(){n.parentNode.insertBefore(s,n);}; s.type = "text/javascript"; s.async = true; s.key = k; s.id = "tildastatscript"; s.src=g; if (w.opera=="[object Opera]") {d.addEventListener("DOMContentLoaded", f, false);} else { f(); } })(document, window, '006ce3981e18dbf5f7c9f381faa74920','script','https://static.tildacdn.info/js/tilda-stat-1.0.min.js');
+}, 2000); </script></body></html>
